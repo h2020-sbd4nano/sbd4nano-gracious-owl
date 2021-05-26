@@ -1,0 +1,2656 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#"
+     xml:base="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+  <owl:Ontology rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl">
+  </owl:Ontology>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001">
+        <rdfs:label xml:lang="en">PC_IDENTITY</rdfs:label>
+        <obo:IAO_0000115>Identifying endpoints</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000002">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_CAS_REG_NR</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000003">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_EC_REG_NR</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000004">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_CHEMICAL_NAME</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000005">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_IUPAC_NAME</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000006">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_JRC_ID</rdfs:label>
+        <obo:IAO_0000115>The numbering system for the JRC Representative Nanomaterials stored in the JRC Repository has been revised in order to accommodate more nanomaterials and continue to
+ensure a high level of traceability. Nanomaterials in the JRC Repository are now identified by the following alphanumeric code (JRC ID): JRCNMXXXYYa, where XXXYY is a number
+that is unique to a single nanomaterial. This alphanumeric code (first column in the table) shall be used in publications to refer to the nanomaterials that have been issued by the
+JRC Repository. JRCPDZZZKKa is the code used to indicate the pure dispersant (without nanoparticles) in case of nanomaterials provided as dispersion.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000007">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_SMILES</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000008">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_INCHIKEY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000009">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_INCHI</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000010">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000001"/>
+        <rdfs:label xml:lang="en">ID_EINECS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011">
+        <rdfs:label xml:lang="en">PC_COMPOSITION</rdfs:label>
+        <obo:IAO_0000115>IUCLID : Composition
+OHT : Not part of OECD Harmonised Templates
+A Substance is defined by its composition. The composition of a Substance can consist of constituents, impurities and additives. This section is a repeatable block section. It enables to enter multiple compositions for a Substance, e.g. to allow different profiles of impurities provided it does not change the identification of the Substance. For detailed instructions on how to define the substance composition in IUCLID, see chapter D.4.1 Substance (create and update substance related information)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000012">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_CONSTITUENT_ROLE</rdfs:label>
+        <obo:IAO_0000115>Indicates the specific role/profile of this constituent in the substance as defined by MATERIAL_KB::ConstituentRole</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000013">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_COMPOSITION_CATEGORY</rdfs:label>
+        <obo:IAO_0000115>Indicates to which composition category the substance or constituent belongs: 'organic compound' ,'organic matter', 'inorganic compound', 'inorganic matter','hybrid material', 'mixture', 'water'</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000014">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_MASS_CONC</rdfs:label>
+        <obo:IAO_0000115>The typical mass concentration of the constituent under consideration within the entire material (sample). [mg/kg]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000015">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_MOLECULAR_FORMULA</rdfs:label>
+        <obo:IAO_0000115>An expression which states the number and type of atoms present in a molecule of a substance.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000016">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_PURITY</rdfs:label>
+        <obo:IAO_0000115>Degree of purity (%) (REACH regulation, consolidated version 01.01.2020)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000017">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_ELEMENTAL_COMPOSITION_MASS_CONC</rdfs:label>
+        <obo:IAO_0000115>Elemental composition expressed as mass concentration.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000018">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000011"/>
+        <rdfs:label xml:lang="en">EP_ELEMENTAL_COMPOSITION_ATOM_PERC</rdfs:label>
+        <obo:IAO_0000115>Elemental composition expressed as atomic percentage (at%)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000019">
+        <rdfs:label xml:lang="en">PC_APPEARANCE</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.1: Appearance
+OHT  1 : Appearance/physical state/colour</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000020">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000019"/>
+        <rdfs:label xml:lang="en">EP_PHYSICAL_STATE</rdfs:label>
+        <obo:IAO_0000115>Physical state at 20°C and 1013 hPa,  enumeration with domain MATERIAL_KB::PhysicalState{gas', 'liquid', 'solid'}</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000021">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000019"/>
+        <rdfs:label xml:lang="en">EP_FORM</rdfs:label>
+        <obo:IAO_0000115>Enumerate like '{solid: particulate/powder'}</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000022">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000019"/>
+        <rdfs:label xml:lang="en">EP_ODOUR</rdfs:label>
+        <obo:IAO_0000115>Enumeration with domain MATERIAL_KB::OdourCategory{'ammonia-like', 'biting', 'characteristic of sulfur-containing compounds', 'characteristic of aromatic compounds', 'faint', 'garlic-like', 'odourless', 'pungent',	'slight', 'sweetish','other'}</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000023">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000019"/>
+        <rdfs:label xml:lang="en">EP_COLOUR</rdfs:label>
+        <obo:IAO_0000115>Open text for now..??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000024">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000019"/>
+        <rdfs:label xml:lang="en">EP_COLOUR_INTENTSITY</rdfs:label>
+        <obo:IAO_0000115>Enumerate: {dark,.. TBD} see registration dossier ECHA</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000025">
+        <rdfs:label xml:lang="en">PC_MELTING</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.2: Melting point/ freezing point
+OHT 2: Melting point/freezing point</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000026">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000025"/>
+        <rdfs:label xml:lang="en">EP_MELTING_POINT</rdfs:label>
+        <obo:IAO_0000115>The melting point is defined as the temperature at which the phase transition from the solid to the liquid state at atmospheric pressure takes place. (OECD TG 102, 1995)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000027">
+        <rdfs:label xml:lang="en">PC_BOILING</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.3: Boiling point
+OHT 3: Boiling point</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000028">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000027"/>
+        <rdfs:label xml:lang="en">EP_BOILING_POINT</rdfs:label>
+        <obo:IAO_0000115>Point at which the vapour pressure of a liquid equals the external pressure acting on the surface of liquid [SOURCE: ISO 11504:2012]
+The normal boiling point of a liquid is defined as the temperature at which the vapour pressure equals the standard atmospheric pressure 101.325 kPa. (OECD TG 103, 1995)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029">
+        <rdfs:label xml:lang="en">PC_DENSITY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.4:  Density
+OHT 4: Density</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000030">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_TRUE_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The mass of a particle divided by its volume, excluding open pores and closed pores (BSI).
+True density also used for liquids and gases.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000031">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_ABSOLUTE_POWDER_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The mass of powder per unit of absolute volume (BSI). Absolute powder volume: (also called Absolute volume): The volume of the solid matter after exclusion of all the spaces (pores and voids) (BSI).
+
+The mass of powder per volume of solid matter after exclusion of all spaces (pores and voids)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000032">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_APPARENT_PARTICLE_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The mass of a particle divided by its apparent (particle) volume (BSI). Apparent particle volume: The total volume of the particle, excluding open pores, but including closed pores (BSI).
+
+The mass of a particle divided by the total volume of the particle, excluding open pores, but including closed pores.
+According to WP3:  Apparent particle density EQUALS Skeletal density! (we could decide to delete apparent this one and always use skeletal density)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000033">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_APPARENT_POWDER_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The mass of a powder divided by its apparent volume (BSI). Apparent powder volume: The total volume of solid matter, open pores and closed pores and interstices (BSI).
+
+The mass of a powder divided by the total volume of solid matter, open pores and closed pores and interstices.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000034">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_BULK_DENSITY</rdfs:label>
+        <obo:IAO_0000115>Bulk density: (also called Bulk powder density): 
+The apparent powder density under defined conditions (BSI). 
+The mass of the particles divided by the volume they occupy that includes the space between the particles (ASTM D5004).
+The ratio of the mass of a collection of discrete pieces of solid material to the sum of the volumes of: the solids in each piece, the voids within the pieces, and the voids among the pieces of the particular collection (ASTM D3766).
+for solids only (IUCLID source)
+The density of a solid is derived from the difference in weight between a sample in air and in a liquid of known density (e.g. water). The density thus measured is only representative of the particular sample employed (bulk density). (OECD TG 109, 2012)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000035">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_EFFECTIVE_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The effective density of nano-agglomerates in liquid suspension refers to the density of the agglomerate unit, which includes both particles and media components, as opposed to the density of the primary particle, which is simply the density of the raw ENM material
+(particle effective density)   ENM_0000093
+
+Effective particle density: The mass of a particle divided by its volume including open pores and closed pores (BSI).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000036">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_ENVELOPE_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The ratio of the mass of a particle to the sum of the volumes of: the solid in each piece and the voids within each piece, that is, within close-fitting imaginary envelopes completely surrounding each piece (ASTM D3766).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000037">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_SKELETAL_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The ratio of the mass of discrete pieces of solid material to the sum of the volumes of: the solid material in the pieces and closed (or blind) pores within the pieces (ASTM D3766).
+Ratio of sample mass to skeleton volume (ISO 15901-1:2016, skeleton density)
+Skeleton volume: volume of the sample including the volume of closed pores (if present) but excluding the volumes of open spores as well as that of void spaces between particles within the bulk sample (ISO 15901-1:2016, source: ISO 12514)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000038">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_TAP_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The apparent powder density obtained under stated conditions of tapping (BSI).
+
+Nanoreg D2_03  Tap density describes the mass per volume after powder compaction in a cylinder (50 times repeated 25 mm drop of a cylinder onto a rubber pad) or by the use of a Dry Substance Jolting Volumeter (ISO 787).
+
+A known weight of a solid material is placed in a glass graduated (i.e. measuring) cylinder and its volume measured to determine the ‘pour density.’ The cylinder is then raised and allowed to fall vertically through a distance of 25 mm on a rubber pad 50 times (or this may be performed using a Dry Substance Jolting Volumeter as described in ISO 787/11). The volume is measured again to determine the ‘tap density.’ (OECD TG 109, 2012)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000039">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_THEORETICAL_DENSITY</rdfs:label>
+        <obo:IAO_0000115>The ratio of the mass of a collection of discrete pieces of solid material to the sum of the volumes of said pieces, the solid material having an ideal regular arrangement at the atomic level (ASTM).
+Theoretical density is true density of a material corresponding to the limit attainable through full density products without pores. (https://www.sciencedirect.com/topics/engineering/theoretical-density)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000040">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000029"/>
+        <rdfs:label xml:lang="en">EP_RELATIVE_DENSITY</rdfs:label>
+        <obo:IAO_0000115>Relative density is the ratio of the density (mass of a unit volume) of a substance to the density of a given reference material.
+(dimensionless unit)
+The relative density (D20/4, density at 20 degrees Centigrade relative to water at 4 degrees Centigrade) may be used to compare different chemicals. (OECD TG 109, 2012)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041">
+        <rdfs:label xml:lang="en">PC_GRANULOMETRY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.5 Particle size distribution (Granulometry)
+OHT 5: Particle size distribution (Granulometry)/Fibre length and diameter distribution
+
+A typical order of length scale is: largest dimension > hydrodynamic diameter > volume (or mass) equivalent diameter > Stokes diameter > VSSA equivalent diameter > smallest dimension (Appendix 4).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000042">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_NOMINAL_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>The indicative particle diameter as provided by the supplier</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000043">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_NOMINAL_LENGTH</rdfs:label>
+        <obo:IAO_0000115>The indicative particle length as provided by the supplier  / manufacturer</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000044">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_PRIMARY_PARTICLE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>primary particle: original source particle (3.1) of agglomerates (3.4) or aggregates (3.5) or mixtures of the two [SOURCE: ISO 26824:2013, 1.4] (ISO/TS 80004-2:2015)
+
+
+Primary particles are the original seeds from which particles grow and are therefore an unrelated concept to constituent particles, aggregates and agglomerates.
+Therefore, the term ‘primary particle’ is irrelevant for the EC NM definition. (JRC Report 2019, An overview of concepts and terms used in the European Commission’s definition of nanomaterial)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000045">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_PRIMARY_PARTICLE_LENGTH</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000046">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_CONSTITUENT_PARTICLE_SIZE</rdfs:label>
+        <obo:IAO_0000115>(JRC Report 2019, An overview of concepts and terms used in the European Commission’s definition of nanomaterial)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000047">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_FERET_DIAMETER_D1</rdfs:label>
+        <obo:IAO_0000115>Feret’s diameter D1 (minimum distance edge to edge, the minor axis).  Minimum diameter D1 corresponds to the ”breadth” of the particle.   [ISO 9276-6:2008 8.1.2]
+
+In case of agglomerates/aggregates the minimum Feret diameter (EP_FERET_DIAMETER_D1) refers to the entire agglomerate/aggregate, whereas the maximum inscribed circle (EP_LARGEST_INTERNAL_CIRCLE) does
+not refer to the entire aggregate, but to the constituent particles of the agglomerate/aggregate ( from the NanoDefine project [21] ).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000048">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_FERET_DIAMETER_D3</rdfs:label>
+        <obo:IAO_0000115>Feret’s diameter D3 (maximum distance edge to edge, the major axis),  Maximum diameter D3 corresponds to the “length” of the particle;  [ISO 9276-6:2008 8.1.2]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000049">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_LARGEST_INTERNAL_CIRCLE</rdfs:label>
+        <obo:IAO_0000115>Largest internal circle or maximum inscribed circle diameter: it is the diameter of the largest circle that fits inside the virtual envelope of the boundaries of the particle on a 2D image.
+
+In case of agglomerates/aggregates the minimum Feret diameter (EP_FERET_DIAMETER_D1) refers to the entire agglomerate/aggregate, whereas the maximum inscribed circle does
+not refer to the entire aggregate, but to the constituent particles of the agglomerate/aggregate ( from the NanoDefine project [21] ).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000050">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_LEGENDRE_ELLIPSE_D1</rdfs:label>
+        <obo:IAO_0000115>Legendre ellipse D1, (length of the minor axis of the legendre ellipse)
+
+An ellipse with its centre at the particle’s centroid and with the same geometrical moments, up to the second order, as the original particle area. [ISO 9276-6:2008 8.1.2]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000051">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_LEGENDRE_ELLIPSE_D3</rdfs:label>
+        <obo:IAO_0000115>Legendre ellipse D3, (length of the major axis of the legendre ellipse)
+
+An ellipse with its centre at the particle’s centroid and with the same geometrical moments, up to the second order, as the original particle area. [ISO 9276-6:2008 8.1.2]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000052">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_GEODESIC_LENGTH_D3</rdfs:label>
+        <obo:IAO_0000115>Geometrical descriptor, length of the fibre when stretch into a straight line.   Provide definition [ISO 9276-6:2008]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000053">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_GEODESIC_THICKNESS</rdfs:label>
+        <obo:IAO_0000115>Is the thickness of the individual fibre, and therefore &amp;lt;= as the EP_FERET_DIAMETER_D1
+Provide definition [ISO 9276-6:2008]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000054">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_EQUIVALENT_CIRCLE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Diameter of a sphere having the same projection area as the particle: SQRT(  4 * [Area] / π)   (Also used: equivalent circle diameter, ECD) [ISO 9276-6:2008 7]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000055">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>D_surface = diameter of a sphere with the same  surface as the particle</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000056">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>D_volume = diameter of a sphere with the same volume as the particle (Equivalent volume diameter)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000057">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_EQ_DISC_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Diameter of a disc with the same volume as the disc/platelett like particle.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000058">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_EQ_DISC_THICKNESS</rdfs:label>
+        <obo:IAO_0000115>Thickness of a disc with the same volume as the disc/platelett like particle.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000059">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_EQ_CYLINDER_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>diameter of a cylinder with the same volume as the fibre like particle.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000060">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_EQ_CYLINDER_LENGTH</rdfs:label>
+        <obo:IAO_0000115>Length of a cylinder with the same volume as the fibre like particle.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000061">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_HYDRODYNAMIC_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Hydrodynamic equivalent diameter D_hydro (= diameter of a sphere with the same translational diffusion coefficient as the particle in the same fluid under the same conditions)
+
+equivalent spherical diameter of a particle in a liquid having the same diffusion coefficient as the real particle in that liquid   [SOURCE: ISO/TS 80004‑6:2013, 3.2.6]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000062">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_Z_AVERAGE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>The Z-Average size or Z-Average mean used in dynamic light scattering is a parameter also known as the cumulants mean. It is the primary and most stable parameter produced by the technique. The Z-Average mean is the best value to report when used in a quality control setting as it is deﬁ ned in ISO 13321 and more recently ISO 22412 which deﬁ nes this mean as the ‘harmonic intensity averaged particle diameter’.
+ Z-average size is the intensity weighted harmonic mean size
+The intensity-weighted mean diameter derived from the cumulants analysis
+Intensity weighted hydrodynamic diameter. Z-AVE HYDRODYNAMIC DIAMETER (DLS RESULT)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000063">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_STOKES_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>D_Stokes (= equivalent diameter corresponding to the diameter of a sphere with the same final settling velocity as the particle undergoing laminar flow in a fluid of the same density and viscosity)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000064">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_AERODYNAMIC_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>The diameter in [nm] of an equivalent spherical particle with unit density and the same settling velocity in air as the particle under consideration.
+The aerodynamic diameter of an irregular particle is defined as the diameter of the spherical particle with a density of 1000 kg/m3 and the same settling velocity as the irregular particle. (Wikipedia)
+The diameter of a sphere with unit density that has aerodynamic behavior identical to that of the particle in question; an expression of aerodynamic behavior of an irregularly shaped particle in terms of the diameter of an idealized particle. Particles having the same aerodynamic diameter may have different dimensions and shapes. 
+[https://www.opentoxipedia.org/index.php/Aerodynamic_diameter]
+[constraint, only relevant if medium.physical_state = gas]
+The median aerodynamic diameter => MAD</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000065">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_MASS_MEDIAN_AERODYNAMIC_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Mass Median Aerodynamic Diameter (MMAD) is defined as the aerodynamic diameter [EP_AERODYNAMIC_EQ_SPHERE_DIAMETER] at which 50% of the particles by mass are larger and 50% are smaller.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000066">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_SIEVE_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Sieve D (= equivalent diameter corresponding to the diameter of a sphere passing through a sieve of defined mesh size with square or circular apertures).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000067">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_ELECTRICAL_MOBILITY_EQ_SPHERE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Electrical mobility equivalent diameter, defines the size of charged particles with the same electrical mobility or the same terminal migration velocity in still air under the influence of a constant electrical field. [ISO 27891:2015 3.16]
+ES-DMA result</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000068">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DISPERSITY</rdfs:label>
+        <obo:IAO_0000115>This index is a number calculated from a simple 2 parameter ﬁ t to the correlation data (the cumulants analysis). The dispersity (PDI)  is dimensionless and scaled such that values smaller than 0.05 are rarely seen other than with highly monodisperse standards. Values greater than 0.7 indicate that the sample has a very broad size distribution and is probably not suitable for the dynamic light scattering (DLS) technique. The various size distribution algorithms work with data that falls between these two extremes. The calculations for these parameters are deﬁ ned in the ISO standard document 13321:1996 E and ISO 22412:2008.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000069">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DISPERSITY_2</rdfs:label>
+        <obo:IAO_0000115>PDI deﬁned as D(w)/D(n), where D(w) is the mean particle size expressed in a weight basis while D(n) is the mean particle size expressed in a number basis.  (CLS)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000070">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_MODE_COUNT</rdfs:label>
+        <obo:IAO_0000115>The number of intensity peaks dectected. (PEAK = MODE) (ThinkWorks) Perhaps extend this descriptor like EP_INTENSITY_MODE_COUNT</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000071">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_FULL_WIDTH_AT_HALF_MAXIMUM</rdfs:label>
+        <obo:IAO_0000115>The same as HALF HEIGHT PEAK WIDTH??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000072">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_RADIUS_OF_GYRATION</rdfs:label>
+        <obo:IAO_0000115>RADIUS OF GYRATION (SAXS)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000073">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_GEOMETRIC_MEAN_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>Is this a relevant endpoint descriptor it seams to lack an indication of the base.. number, mass, volume, surface etc??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000074">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DERIVED_COUNT_RATE</rdfs:label>
+        <obo:IAO_0000115>DLS specific (The amount of protons arriving at the detector per second) is expresses in Kcps (Kilo counts per second, which is equivalent to 1000 photons ariving at the detector per second.)
+Perhaps make descriptor more specific.. EP_DERIVED_PHOTON_COUNT_RATE??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000075">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_RELATIVE_INTENSITY</rdfs:label>
+        <obo:IAO_0000115>DLS specific?? PERHAPS RENAME in EP_RELATIVE_SCATTERING_INTENSITY</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000076">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DIMENSION</rdfs:label>
+        <obo:IAO_0000115>Represent the dimension a size is related to. D1, D2 and D3 where D1 is the smallest, D2 is the intermediate and D3 the largest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000077">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_PARTICLE_SIZE_LEVEL</rdfs:label>
+        <obo:IAO_0000115>Indicates which level the size information is related to. Two levels are distinguished: constituent particle level, agglomeration/aggregation level.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000078">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_OBSERVATION_SCALE</rdfs:label>
+        <obo:IAO_0000115>ISO/TS 11888:2017(E)
+atomic scale
+Mesoscopic  (individual)
+“macroscopic” describes the shape and size of MWCNT aggregates or agglomerates</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000079">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DmPx_D1</rdfs:label>
+        <obo:IAO_0000115>DmPx_D1, X% of the populations mass lies below this size of the smallest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000080">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DmPx_D2</rdfs:label>
+        <obo:IAO_0000115>DmPx_D2, X% of the populations mass lies below this size of the 2nd dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000081">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DmPx_D3</rdfs:label>
+        <obo:IAO_0000115>DmPx_D3, X% of the populations mass lies below this size of the largest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000082">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DnPx_D1</rdfs:label>
+        <obo:IAO_0000115>DnPx_D1, X% of the populations number lies below this size of the smallest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000083">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DnPx_D2</rdfs:label>
+        <obo:IAO_0000115>DnPx_D2, X% of the populations number lies below this size of the second dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000084">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DnPx_D3</rdfs:label>
+        <obo:IAO_0000115>DnPx_D3, X% of the populations number lies below this size of the largest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000085">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DvPx_D1</rdfs:label>
+        <obo:IAO_0000115>DvPx_D1, X% of the populations volume lies below this size of the smallest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000086">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DvPx_D2</rdfs:label>
+        <obo:IAO_0000115>DvPx_D2, X% of the populations volume lies below this size of the second dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000087">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DvPx_D3</rdfs:label>
+        <obo:IAO_0000115>DvPx_D3, X% of the populations volume lies below this size of the largest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000088">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DsPx_D1</rdfs:label>
+        <obo:IAO_0000115>DsPx_D1, X% of the populations surface area lies below this size of the smallest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000089">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DsPx_D2</rdfs:label>
+        <obo:IAO_0000115>DsPx_D2, X% of the populations surface area lies below this size of the second dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000090">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DsPx_D3</rdfs:label>
+        <obo:IAO_0000115>DsPx_D3, X% of the populations surface area lies below this size of the largest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000091">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DiPx_D1</rdfs:label>
+        <obo:IAO_0000115>DiPx_D1, X% of the populations light intensity lies below this size of the smallest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000092">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DiPx_D2</rdfs:label>
+        <obo:IAO_0000115>DiPx_D2, X% of the populations light intensity lies below this size of the second dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000093">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000041"/>
+        <rdfs:label xml:lang="en">EP_DiPx_D3</rdfs:label>
+        <obo:IAO_0000115>DiPx_D3, X% of the populations light intensity lies below this size of the largest dimension.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000094">
+        <rdfs:label xml:lang="en">PC_VAPOUR</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.6: Vapour pressure
+OHT 6: Vapour pressure</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000095">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000094"/>
+        <rdfs:label xml:lang="en">EP_VAPOUR_PRESSURE</rdfs:label>
+        <obo:IAO_0000115>The vapour pressure of a substance is defined as the saturation pressure above a solid or liquid substance. The SI unit of pressure, which is the pascal (Pa), should be used. (OECD TG 104, 2006)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000096">
+        <rdfs:label xml:lang="en">PC_PARTITION</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.7 : Partition coefficient
+OHT 7: Partition coefficient</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000097">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000096"/>
+        <rdfs:label xml:lang="en">EP_LOG_POW</rdfs:label>
+        <obo:IAO_0000115>The partition coefficient between water and 1-octanol (POW) is defined as the ratio of the equilibrium concentrations of the test substance in 1-octanol saturated with water (CO) and water saturated with 1-octanol (CW).
+POW = CO / CW
+As a ratio of concentrations it is dimensionless. Most frequently it is given as the logarithm to the base 10 (log POW). POW is temperature dependent and reported data should include the temperature of the measurement. (OECD TG 123, 2006)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000098">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000096"/>
+        <rdfs:label xml:lang="en">EP_LOG_K_VALUE</rdfs:label>
+        <obo:IAO_0000115>??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000099">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000096"/>
+        <rdfs:label xml:lang="en">EP_CONC_IN_WATER</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000100">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000096"/>
+        <rdfs:label xml:lang="en">EP_CONC_IN_OCTANOL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101">
+        <rdfs:label xml:lang="en">PC_WATER_SOL</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.8: Water solubility
+OHT 8: Water solubility</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000102">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_WATER_SOL</rdfs:label>
+        <obo:IAO_0000115>The water solubility of a substance is the saturation mass concentration of the substance in water at a given temperature. Water solubility is expressed in mass of solute per volume of solution. The SI unit is kg/m3 but g/l is commonly used. (OECD TG 105, 1995)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000103">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_DISSOLUTION_RATE</rdfs:label>
+        <obo:IAO_0000115>The amount of substance dissolved (solute) into a solvent over time, expressed as ng/cm2/h</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000104">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_DISSOLUTION_HALF_TIME</rdfs:label>
+        <obo:IAO_0000115>Dissolution expressed as the time needed to dissolve half the mass.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000105">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_DISSOLUTION_MASS_LOSS</rdfs:label>
+        <obo:IAO_0000115>The mass percentage of substance dissolved (solute) into a solvent per hour (expressed as %/h) (based on dissolution rate definition in OECD Guidance Documents 317 &amp; 318).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000106">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_INTRACELLULAR_DISSOLUTION_RATE</rdfs:label>
+        <obo:IAO_0000115>H-I-3 => %</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000107">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_INTRACELLULAR_DISSOLUTION_HALFTIME</rdfs:label>
+        <obo:IAO_0000115>H-I-1, H-I-2 => Qualitiative outcome</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000108">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_INTRACELLULAR_MASS_LOSS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000109">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_TRANSFORMATION_D1</rdfs:label>
+        <obo:IAO_0000115>% change in morphology of the smallest dimension, pre versus post incubation transformation.
+(reduction in size D1?)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000110">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_TRANSFORMATION_D3</rdfs:label>
+        <obo:IAO_0000115>% change in morphology of the largest dimension, pre versus post incubation transformation.
+(reduction in size D3?)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000111">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_TRANSFORMATION_MORPHOLOGY</rdfs:label>
+        <obo:IAO_0000115>% of ??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000112">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_SOLUBILITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000113">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000101"/>
+        <rdfs:label xml:lang="en">EP_PERCENTAGE_DISSOLVED</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000114">
+        <rdfs:label xml:lang="en">PC_SOL_ORGANIC</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.9: Solubility in organic solvents
+OHT 9: Solubility in organic solvents/fat solubility</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000115">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000114"/>
+        <rdfs:label xml:lang="en">EP_SOL_ORGANIC</rdfs:label>
+        <obo:IAO_0000115>The mass fraction of a substance which forms a homogeneous phase with a liquid fat(oil) without giving rise to chemical reactions is defined as fat solubility. The maximum of such mass fraction is called the saturation mass fraction, and this is a function of temperature. The composition of fats will differ from organism to organism and even within a single organism. Since it is desirable to be able to compare results from different laboratories, it is necessary to employ standard fat. This standard fat should be similar in composition and behaviour to materials occurring naturally, and a commercial triglyceride mixture described in the Annex satisfies this requirement, although any other mixtures of triglycerides that give demonstrably comparable results can be used. The saturation mass fraction of a substance should be given in g/kg of standard fat and referenced to 37°C ± 0.5°C. (OECD TG 116, 1981)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000116">
+        <rdfs:label xml:lang="en">PC_SURFACE_TENSION</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.10: Surface tension
+OHT 10: Surface tension</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000117">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000116"/>
+        <rdfs:label xml:lang="en">EP_WATER_CONTACT_ANGLE</rdfs:label>
+        <obo:IAO_0000115>When a liquid does not spread on a substrate (usually a solid), a contact angle (θ) is formed which is defined as the angle between two of the interfaces at the three-phase line of contact. It must always be stated which interfaces are used to define θ. It is often necessary to distinguish between the 'advancing contact angle' (θa), the 'receding contact angle' (θr) and the 'equilibrium contact angle' (θe). (IUPAC Gold Book, https://goldbook.iupac.org/terms/view/C01290)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000118">
+        <rdfs:label xml:lang="en">PC_STABILITY_THERMAL_SUNLIGHT_METALS</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.19: Stability: thermal, sunlight, metals
+OHT 19: Stability: thermal, sunlight, metals</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000119">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000118"/>
+        <rdfs:label xml:lang="en">EP_MASS_LOSS</rdfs:label>
+        <obo:IAO_0000115>Thermogravimetric analysis (TGA) is conducted on an instrument referred to as a thermogravimetric analyzer. A thermogravimetric analyzer continuously measures mass while the temperature of a sample is changed over time. Mass, temperature, and time in thermogravimetric analysis are considered base measurements while many additional measures may be derived from these three base measurements.
+TGA provide thus the weight loss [%] or mass loss [g] (of the organic matter) as a function of temperature.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000120">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000118"/>
+        <rdfs:label xml:lang="en">EP_MASS_LOSS_WATER</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000121">
+        <rdfs:label xml:lang="en">PC_NON_SATURATED_PH</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.20: pH
+OHT 20: pH</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000122">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000121"/>
+        <rdfs:label xml:lang="en">EP_PH</rdfs:label>
+        <obo:IAO_0000115>pH is defined as the decimal logarithm of the reciprocal of the hydrogen ion activity in a solution.( Covington, A. K.; Bates, R. G.; Durst, R. A. (1985). "Definitions of pH scales, standard reference values, measurement of pH, and related terminology" (PDF). Pure Appl. Chem. 57 (3): 531–542. doi:10.1351/pac198557030531.) OECD 122 (Test Guideline) Electrometric determination of pH measures the negative log10 aqueous hydronium ion concentration of ideal solutions. Dimensionless quantity.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000123">
+        <rdfs:label xml:lang="en">PC_DISSOCIATION</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.21: Dissociation constant
+OHT 21: Stability: Dissociation constant
+OECD GD 112: Dissociation is the reversible splitting into two or more chemical species which may be ionic. The process is indicated generally by: RX ⇌ R+ + X- and the concentration equilibrium constant governing the reaction is K= [R+][X-]/[RX]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000124">
+        <rdfs:label xml:lang="en">PC_VISCOSITY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.22: Viscosity 
+OHT 22: Viscosity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000125">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000124"/>
+        <rdfs:label xml:lang="en">EP_VISCOSITY</rdfs:label>
+        <obo:IAO_0000115>OECD GD 114: Viscosity is the property of a fluid substance of absorbing a stress during deformation which depends on the rate of the deformation. Similarly, the stress can be regarded as the cause which brings about a deformation rate. The shear stress τ and the shear rate D are related by the equation: τ= η D. η is defined as the dynamic viscosity. The SI unit of dynamic viscosity is the Pascal second, [Pa s]. The SI unit of kinematic viscosity (dynamic viscosity divided by the density of the fluid) is the square metre per second, [m2/s].</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000126">
+        <rdfs:label xml:lang="en">PC_AGGLOMERATION_AGGREGATION</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.24: Agglomeration/aggregation
+OHT 101: Nanomaterial agglomeration/aggregation
+
+OECD TG318: Process of contact and adhesion whereby dispersed particles are held together by weak physical interactions ultimately leading to enhanced sedimentation by the formation of precipitates of larger than colloidal size (agglomerates) (slightly modified according to 7). In contrast to aggregation where particles held by strong bonds like sinter bridges, agglomeration is a reversible process.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000127">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000126"/>
+        <rdfs:label xml:lang="en">EP_AA_INDEX</rdfs:label>
+        <obo:IAO_0000115>The agglomeration/aggregation index is a unitless quantity. It is here defined as 1– A'/A'', where A' is the mean diameter of primary particles and A'' is the mean diameter of aggregates. (source OHT)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000128">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000126"/>
+        <rdfs:label xml:lang="en">EP_AA_RATIO</rdfs:label>
+        <obo:IAO_0000115>The agglomeration/aggregation ratio is a unitless quantity. It is the ratio of the number of agglomerates to single particles.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000129">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000126"/>
+        <rdfs:label xml:lang="en">EP_FRACTAL_DIMENSION</rdfs:label>
+        <obo:IAO_0000115>Fractal Dimension (DF) is the power that an equivalent radius of a NP agglomerate scales to in order to scale to its mass. A DF of 3 hence corresponds to a solid sphere (no porosity) and a value of 1 describes a rod. 
+
+ NP agglomerates can be divided into diffusion limited agglomerates (DLCA) with DF values of approximately 1.8, and reaction limited cluster agglomerates (RCLA) with a DF value between 2.1 and 2.5. (SAX, VCM)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000130">
+        <rdfs:label xml:lang="en">PC_CRYSTALLINE_PHASE</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.25: Crystalline phase
+OHT 102: Nanomaterial crystalline phase
+
+Crystalline (crystal) phase consist of ordered and periodic atomic arrangements (Nature Reviews Chemistry volume 4, pages243–256(2020)).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000131">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000130"/>
+        <rdfs:label xml:lang="en">EP_CRYSTALLINITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000132">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000130"/>
+        <rdfs:label xml:lang="en">EP_CRYSTAL_SYSTEM</rdfs:label>
+        <obo:IAO_0000115>A material in which the atoms are arranged in a translationally periodic array in the three dimensions or which are arranged in rotationally periodic arrays in three dimensions (Cullity, 1978, Element of X-Ray Diffraction, Second Edition, Addison-Wesley Publishing Co., Reading, MA, 1978). In total there are seven crystal systems: triclinic, monoclinic, orthorhombic, tetragonal, trigonal, hexagonal, and cubic.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000133">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000130"/>
+        <rdfs:label xml:lang="en">EP_SPACE_GROUP</rdfs:label>
+        <obo:IAO_0000115>A space group is the symmetry group of a configuration in space, usually in three dimensions. In crystallography, space groups are also called the crystallographic or Fedorov groups, and represent a description of the symmetry of the crystal. (Hiller, Howard (1986). "Crystallography and cohomology of groups". Amer. Math. Monthly. 93 (10): 765–779. doi:10.2307/2322930. JSTOR 2322930). Crystals can be classified according to 230 space groups and a space group can be referred to by a number or the space group symbol.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000134">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000130"/>
+        <rdfs:label xml:lang="en">EP_MINERAL_NAME</rdfs:label>
+        <obo:IAO_0000115>Name of the mineral.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000135">
+        <rdfs:label xml:lang="en">PC_CRYSTALLITE_AND_GRAIN_SIZE</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.26: Crystallite and grain size
+OHT 103: Nanomaterial crystallite and grain size
+
+A grain consists of a single material, but may be crystalline, or polycrystalline. An individual crystallite consists of a single phase.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000136">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000135"/>
+        <rdfs:label xml:lang="en">EP_CRYSTALLITE_SIZE</rdfs:label>
+        <obo:IAO_0000115>Crystallite size is the size of a single crystal in powder form which contains a single phase.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000137">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000135"/>
+        <rdfs:label xml:lang="en">EP_GRAIN_SIZE</rdfs:label>
+        <obo:IAO_0000115>Grain consists of a single material that may be crystalline or polycrystalline. SI unit for grain size [m].</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138">
+        <rdfs:label xml:lang="en">PC_ASPECT_RATIO_SHAPE</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.27: Aspect ratio/shape
+OHT  104: Nanomaterial aspect ratio/shape</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000139">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_ASPECT_RATIO_D3_D1</rdfs:label>
+        <obo:IAO_0000115>Ratio of maximum D3 to minimum D1 Feret diameter (D3/D1), will result in a value >= 1. 
+
+Ratio of length to width of a particle. [ISO 13794:1999 2.10]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000140">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_ELLIPSE_RATIO_D3_D1</rdfs:label>
+        <obo:IAO_0000115>The aspect ratio of the particle’s fitted ellipse, i.e., [Major Axis]/[Minor Axis]. https://imagej.nih.gov/ij/docs/guide/146-30.html
+PC_GRANULOMETRY::EP_LEGENDRE_ELLIPSE_D3/PC_GRANULOMETRY::EP_LEGENDRE_ELLIPSE_D1</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000141">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_ASPECT_RATIO_D1_D3</rdfs:label>
+        <obo:IAO_0000115>Ratio of minimum D1 to maximum D3 Feret diameter (D1/D3), will result in a value >0 and &amp;lt;= 1. For not very elongated particles.  [ISO 9276-6:2008 8.1.3]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000142">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_ELLIPSE_RATIO_D1_D3</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000143">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_COMPACTNESS</rdfs:label>
+        <obo:IAO_0000115>Degree to which the particle (or its projection area) is similar to a circle, considering the overall form of the particle: [ISO 9276-6:2008 8.1.3]
+
+Compactness = SQRT(  4 * [Area] / π   ) / [D3 Feret diameter]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000144">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_ROUNDNESS</rdfs:label>
+        <obo:IAO_0000115>Degree to which the particle (or its projection area) is similar to a circle, considering the overall form of the particle: [ISO 9276-6:2008 8.1.3] 
+
+Roundness = (4 × [Area]) / (π × [D3 Feret diameter]^2)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000145">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_CIRCULARITY</rdfs:label>
+        <obo:IAO_0000115>Circularity, is defined as the degree to which the particle is similar to a circle, taking into consideration the smoothness of the perimeter.  This means circularity is a measurement of both the particle form and roughness.  Thus, the further away from a perfectly round, smooth circle a particle becomes, the lower the circularity value.  Circularity is a dimensionless value.  
+
+[ISO9276-6 8.2] 
+
+Degree to which the particle (or its projection area) is similar to a circle, considering the smoothness of the perimeter:
+SQRT(  4π x [Area] / [Perimeter]^2 )</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000146">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_CIRCULARITY_FORM_FACTOR</rdfs:label>
+        <obo:IAO_0000115>Circularity, equal to 4π × [Area]/[Perimeter]^2 ranges from 0 (infinitely elongated polygon) to 1 (perfect circle). https://imagej.nih.gov/ij/docs/guide/146-30.html</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000147">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_SOLIDITY</rdfs:label>
+        <obo:IAO_0000115>Solidity, S, is the measurement of the overall concavity of a particle.  It is defined as the image area, A, divided by the convex hull area, Ac, as given in Equation 9.  Thus, as the particle becomes more solid, the image area and convex hull area approach each other, resulting in a solidity value of one.  However, as the particle form digresses from a closed circle, the convex hull area increases and the calculated solidity decreases.  Solidity is a dimensionless value.   
+
+[ISO9276-6 8.2]  
+Measure of the overall concavity of a particle: 
+Solidity = [Area]/ [Ac]  where Ac is the area of the convex hull (envelope) bounding the particle</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000148">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_CONVEXITY</rdfs:label>
+        <obo:IAO_0000115>Convexity, Cx, is a measurement of the particle edge roughness and is defined as the convex hull perimeter, Pc, divided by the actual perimeter, P, as given in Equation 8.  Thus, as the surface of the particle becomes rough, the actual perimeter increases, thus lowering the convexity measurement.  Convexity is a dimensionless value.   
+ 
+                            
+[ISO9276-6 8.2] 
+Convexity Pc / P = where Pc is the length of the perimeter of the convex hull (envelope) bounding the particle []</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000149">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_DYNAMIC_SHAPE_FACTOR</rdfs:label>
+        <obo:IAO_0000115>Provide definition</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000150">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_SHAPE_CATEGORY</rdfs:label>
+        <obo:IAO_0000115>Four shape categories: spheriodal, elongated, platelets, mixed</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000151">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_SHAPE_SUBCATEGORY</rdfs:label>
+        <obo:IAO_0000115>Subcategories of the overall shape category: [Spherical, Pyramidal, Cubic, Star, Orthorhombic, Polyhedral, Tubes, Rods, Discs, Plates]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000152">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000138"/>
+        <rdfs:label xml:lang="en">EP_ASSEMBLY_STRUCTURE</rdfs:label>
+        <obo:IAO_0000115>The assembly structure of the primary particle. MATERIAL:KB::AssemblyStructure{ 'shell-like structures', 'multi-walled', 'nano-onions' , 'multi-layers' , 'hollow structures'}
+Warning! Combinations are also possible, like</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153">
+        <rdfs:label xml:lang="en">PC_SPECIFIC_SURFACE_AREA</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.28: Specific surface area
+OHT 105: Nanomaterial specific surface area</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000154">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_AREA</rdfs:label>
+        <obo:IAO_0000115>extent of available surface area as determined by a given method under stated conditions
+
+Note 1 to entry: For the purposes of this International Standard, the area includes the external surface of a solid plus the internal surface of its accessible macro-, meso- and micropores.
+
+[SOURCE: ISO 15901-1:2006[1], 3.25]
+
+Is this the same as absolute surface area??</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000155">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_MASS_SPECIFIC_SURFACE_AREA</rdfs:label>
+        <obo:IAO_0000115>Absolute surface area of the sample divided by sample mass. [ISO/TS 80004-6:2013 3.6.1]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000156">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_SBET</rdfs:label>
+        <obo:IAO_0000115>Brunauer, Emmett and Teller (BET),  m2/g => the same as EP_MASS_SPECIFIC_SURFACE_AREA</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000157">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_SPECIFIC_SURFACE_AREA</rdfs:label>
+        <obo:IAO_0000115>Absolute surface area of the sample divided by sample volume. (VSSA) [ISO/TS 80004-6:2013 3.6.1] m2/cm3
+EP_MASS_EXTERNAL_SURFACE [m2/g] *  EP_SKELETAL_DENSITY [g/cm3] => [m2/cm3]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000158">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_MASS_EXTERNAL_SURFACE</rdfs:label>
+        <obo:IAO_0000115>This is the mass based external surface area relative to the total mass, where the external surface area is the total surface area minus the surface area of the micropores. 
+See, BET VSSA assay WP3</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000159">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_VOLUME_EXTERNAL_SURFACE</rdfs:label>
+        <obo:IAO_0000115>This is the volume based external surface area relative to the total volume, where the external surface area is the total surface area minus the surface area of the micropores.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000160">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_MASS_MICROPOROSITY_SURFACE</rdfs:label>
+        <obo:IAO_0000115>Surface area of the micropores in the material relative to the total  mass. Unit [m2/g].</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000161">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_TITRATOR_VOLUME</rdfs:label>
+        <obo:IAO_0000115>Volume needed to determine the SSA of a material following the Sears method. Unit [ml].
+See (Sears) expressed in (ml)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000162">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000153"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_AREA_TO_VOLUME_RATIO</rdfs:label>
+        <obo:IAO_0000115>Surface Area / Volume, a sphere typically has the lowest ratio of all shapes for the same volume.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000163">
+        <rdfs:label xml:lang="en">PC_ZETA_POTENTIAL</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.29: Zeta potential
+OHT 106: Nanomaterial Zeta potential</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000164">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000163"/>
+        <rdfs:label xml:lang="en">EP_ZETA_POTENTIAL</rdfs:label>
+        <obo:IAO_0000115>Zeta Potential–electrokinetic potential: the electric potential at the shear plane of the diffuse double layer. The zeta potential is derived from electro-kinetic phenomena, the movement of the particles in an electric field. The conversion of electrophoretic mobility measurements into zeta potential requires several assumptions about the properties of the double layer.As long as the assumptions are always identical, identical conversions and hence zeta potentials are retrieved. Reporting zeta potentials would require the reporting of the assumptions made to make them comparable. [OECD TG 318]
+Unit: [mV]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000165">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000163"/>
+        <rdfs:label xml:lang="en">EP_ISOELECTRIC_POINT</rdfs:label>
+        <obo:IAO_0000115>IEP –Isoelectric point: the pH at which the zeta potential or particle mobility in response to an electric field is zero. Only in the absence of specifically adsorbing ions which change the surface charge compared to the pristine surface, the IEP equals the point of zero charge (PZC) [OECD TG 318]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000166">
+        <rdfs:label xml:lang="en">PC_SURFACE_CHEMISTRY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.30: Surface chemistry
+OHT 107: Nanomaterial surface chemistry</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000167">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000166"/>
+        <rdfs:label xml:lang="en">EP_ATOMIC_COMPOSITION</rdfs:label>
+        <obo:IAO_0000115>Add to composition..
+
+Atomic composition of the surface chemistry may refer to hyphenating the TGA (in EP_MASS_LOSS) to evolved gas analysis such as mass spectrometry (TGA-MS). This allows quantitative analysis of the polymer compounds in the material. Another common tool is to hyphenate with FTIR for infra red spectrometry (TGA-FTIR). I am not sure if these come under the same endpoint e.g. EP_EVOLVED_GAS_ANALYSIS or if TGA-MS should be under EP_ATOMIC_COMPOSITION whilst TGA-FTIR should be under EP_COMPOUND_CLASS (or something similar). I ask this because they deliver importantly different results, but in effect give you a quantitative measure of the chemical composition of the polymer. See definitions below for more detail. "TGA-FTIR can be compared to spectral reference databases for identifying the chemical class or family of the unknowns. In many cases, the chemistries can be narrowed down to specific compounds" "TGA-MS provides a sensitive method for analyzing TGA gaseous products in detail... Tentative identification of the original gas products can be performed in two steps: (1) assigning the structure of the fragment ions using the mass data, and, (2) correlating the assigned fragment structures with known fragmentation patterns of specific molecules."definitions from https://www.eag.com/techniques/phys-chem/tga-ega/ as an example.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000168">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000166"/>
+        <rdfs:label xml:lang="en">EP_MASS_LOSS</rdfs:label>
+        <obo:IAO_0000115>Thermogravimetric analysis (TGA) is conducted on an instrument referred to as a thermogravimetric analyzer. A thermogravimetric analyzer continuously measures mass while the temperature of a sample is changed over time. Mass, temperature, and time in thermogravimetric analysis are considered base measurements while many additional measures may be derived from these three base measurements.
+
+This is considered part of PC_SURFACE_CHEMISTRY as this technique can be used to measure the % mass loss on heating. This can be used to infer the % mass of coatings in a nanomaterial sample. Example of micro-TGA https://doi.org/10.1021/ac402888v
+Standards for TGA are ASTM E1131, ISO 11358</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169">
+        <rdfs:label xml:lang="en">PC_DUSTINESS</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.31: Dustiness
+OHT 108: Nanomaterial dustiness
+
+Propensity of materials to produce airborne dust during handling. [ISO 12025:2012  3.2.15]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000170">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169"/>
+        <rdfs:label xml:lang="en">EP_RESPIRABLE_DUST_INDEX_MASS</rdfs:label>
+        <obo:IAO_0000115>the mass fraction of inhaled particles penetrating to the unciliated airways</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000171">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169"/>
+        <rdfs:label xml:lang="en">EP_RESPIRABLE_DUST_INDEX_NUMB</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000172">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169"/>
+        <rdfs:label xml:lang="en">EP_THORACIC_DUST_INDEX_MASS</rdfs:label>
+        <obo:IAO_0000115>the mass fraction of inhaled particles penetrating beyond the larynx</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000173">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169"/>
+        <rdfs:label xml:lang="en">EP_THORACIC_DUST_INDEX_NUMB</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000174">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169"/>
+        <rdfs:label xml:lang="en">EP_INHALABLE_DUST_INDEX_MASS</rdfs:label>
+        <obo:IAO_0000115>the mass fraction of total airborne particles which is inhaled through the nose and mouth.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000175">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000169"/>
+        <rdfs:label xml:lang="en">EP_INHALABLE_DUST_INDEX_NUMB</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000176">
+        <rdfs:label xml:lang="en">PC_POROSITY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.32: Porosity
+OHT 109: Nanomaterial porosity
+Porosity or void fraction is a measure of the void (i.e. 'empty') spaces in a material,and is a fraction of the volume of voids over the total volume.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000177">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000176"/>
+        <rdfs:label xml:lang="en">EP_VOID_SPACE_FRACTION</rdfs:label>
+        <obo:IAO_0000115>Porosity or void fraction is a measure of the void (i.e. 'empty') spaces in a material,and is a fraction of the volume of voids over the total volume.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000178">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000176"/>
+        <rdfs:label xml:lang="en">EP_SPECIFIC_PORE_VOLUME</rdfs:label>
+        <obo:IAO_0000115>volume of open pores unless otherwise stated (ISO 15901-1:2016(en))</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000179">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000176"/>
+        <rdfs:label xml:lang="en">EP_MODAL_PORE_DIAMETER</rdfs:label>
+        <obo:IAO_0000115>pore diameter of the maximum in a differential pore size distribution curve (ISO 15901-1:2016(en))</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000180">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000176"/>
+        <rdfs:label xml:lang="en">EP_PORE_SIZE</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000181">
+        <rdfs:label xml:lang="en">PC_POUR_DENSITY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.33: Pour density
+OHT 110: Nanomaterial pour density
+IUCLID 5.0 manual
+4.34.1.20. Pour density or void fraction is a measure of the void (i.e. 'empty') spaces in a material,and is a fraction of the volume of voids over the total volume.
+I DON'T THINK THIS IS THE CORRECT DEFINITION... it is the same as POROSITY definition in IUCLID 5.0.. I guess they mixed up pore and pour!!!
+
+Nanoreg D2_03: Pour density, also called bulk or apparent density, is given by the mass per volume that a given powder occupies as poured directly into a container without any further compaction.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000182">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000181"/>
+        <rdfs:label xml:lang="en">EP_POUR_DENSITY</rdfs:label>
+        <obo:IAO_0000115>Pour density, also called bulk or apparent density, is given by the mass per volume that a given powder occupies as poured directly into a container without any further compaction. 
+ Might be equal to PC_DENSITY::EP_APPARENT_POWDER_DENSITY, PC_DENSITY::BULK_DENSITY
+ 
+ A known weight of a solid material is placed in a glass graduated (i.e. measuring) cylinder and its volume measured to determine the ‘pour density.’ (OECD TG 109, 2012).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000183">
+        <rdfs:label xml:lang="en">PC_PHOTOCATALYTIC_ACTIVITY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.34: Photocatalytic activity
+OHT 111: Nanomaterial photocatalytic activity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184">
+        <rdfs:label xml:lang="en">PC_RADICAL_FORMATION_POTENTIAL</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.35: Radical formation potential
+OHT 112: Nanomaterial radical/formation potential</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000185">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_OH_RADICAL_FORMATION_POTENTIAL</rdfs:label>
+        <obo:IAO_0000115>Potential of forming hydroxyl radicals. There appear to be no standardised methods or definitions for this (however, see the OECD document ENV/JM/MONO(2016)7).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000186">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_OXIDATIVE_DAMAGE_PER_DOSE</rdfs:label>
+        <obo:IAO_0000115>The oxidative damage / nmol TEU /l.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000187">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_BIOLOGICAL_OXIDATIVE_DAMAGE_MASS</rdfs:label>
+        <obo:IAO_0000115>The mass based oxidative damage (mBOD) in nmol TUE/mg  => Trolox-equivalent units (TEU), Arnaud Gandon et al 2017 J. Phys.: Conf. Ser. 838 012033</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000188">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_BIOLOGICAL_OXIDATIVE_DAMAGE_SURF</rdfs:label>
+        <obo:IAO_0000115>The surface based oxidative damage sBOD  in nmol TEU/m2 => Trolox-equivalent units (TEU), Arnaud Gandon et al 2017 J. Phys.: Conf. Ser. 838 012033</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000189">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_OXIDATIVE_DAMAGE_AUC_MASS</rdfs:label>
+        <obo:IAO_0000115>AUC => Area Under Curve</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000190">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_OXIDATIVE_DAMAGE_AUC_SURFACE</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000191">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_SPIN_COUNT_PER_SURFACE_CONC</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000192">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_REACTIVITY_CPH_DH20_MASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000193">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_REACTIVITY_CPH_DH20_SURF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000194">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_REACTIVITY_DMPO_DH20_MASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000195">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_SURFACE_REACTIVITY_DMPO_DH20_SURF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000196">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_FLUORESCENCE_480_530_AU</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000197">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_DCFH_ROS_GENERATION_AU</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000198">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_DCFH_OXIDATION_MASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000199">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_DCFH_OXIDATIVE_STRESS_PERC_OF_CONTROL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000200">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_DCFH_SCORE_MASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000201">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_EPR_SCORE_SURF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000202">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_EPR_SCORE_MASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000203">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_EPR_SIGNAL_INTENSITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000204">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_EPR_SIGNAL_INTENSITY_PERC_OF_CONTROL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000205">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_FRAS_SCORE_MASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000206">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000184"/>
+        <rdfs:label xml:lang="en">EP_FRAS_SCORE_SURF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000207">
+        <rdfs:label xml:lang="en">PC_CATALYTIC_ACTIVITY</rdfs:label>
+        <obo:IAO_0000115>IUCLID 4.36: Catalytic activity
+OHT  113: Nanomaterial catalytic activity
+
+In the REACH context this seems to be descriptive rather than any specific measurable quantity linked to a specific assay, i.e. any available studies relevant to the catalytic properties of the nanomaterial are summarised.
+
+Increase in the rate of reaction of a specified chemical reaction that an enzyme produces in a specific assay system. (IUPAC Gold Book https://goldbook.iupac.org/terms/view/C00881)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000208">
+        <rdfs:label xml:lang="en">PC_RIGIDITY</rdfs:label>
+        <obo:IAO_0000115>Newly introduced Gracious (ThinkWorks)
+
+Rigidity, in the context of this Guidance, is the ability of an elongated particle or platelet to retain its shape, without damage, when subject to mechanical (bending) forces. (ECHA-19-H-14-EN , Appendix for nanoforms applicable to the Guidance on Registration and Substance Identification )</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000209">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000208"/>
+        <rdfs:label xml:lang="en">EP_STATIC_BENDING_PERSISTENCE_LENGTH</rdfs:label>
+        <obo:IAO_0000115>Maximum straight length without static bending (SBPL) (ISO/TS 11888:2017 3.1.4)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000210">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000208"/>
+        <rdfs:label xml:lang="en">EP_BENDING_RATIO</rdfs:label>
+        <obo:IAO_0000115>Ratio between mean-squared end-to-end distance and squared contour length. (ISO/TS 11888:2017 3.1.8)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000211">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000208"/>
+        <rdfs:label xml:lang="en">EP_CONTOUR_LENGTH</rdfs:label>
+        <obo:IAO_0000115>Total length of an MWCNT along its axis. (ISO/TS 11888:2017 3.1.5)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000212">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000208"/>
+        <rdfs:label xml:lang="en">EP_BIOLOGICAL_STIFFNESS</rdfs:label>
+        <obo:IAO_0000115>H-I-1</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000213">
+        <rdfs:label xml:lang="en">PC_HYDROPHOBICITY</rdfs:label>
+        <obo:IAO_0000115>Newly introduced Gracious (ThinkWorks)
+
+In the Greek words, hydro means water, philicity means affinity, and phobicity means lack of affinity.A surface is hydrophobic when its static water contact angle θ is >90° and is hydrophilic when θ is &lt;90°. (J. Phys. Chem. Lett. 2014, 5, 4, 686–688)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000214">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000213"/>
+        <rdfs:label xml:lang="en">EP_WATER_CONTACT_ANGLE</rdfs:label>
+        <obo:IAO_0000115>Perhaps this is already covered in the PC_SURFACE_TENSION category
+
+Method to measure of wettability (and hydrophobicity thus) of solid surface by water via the Young equation. Unit [°].
+
+Water contact angle (WCA) is the angle formed tangential to the water droplet at the air–liquid–solid interface. A WCA less than 90 degree is an indication of a wettable surface; a WCA greater than 90 degree indicates poor wettability. (doi.org/10.1016/B978-0-12-802926-8.00002-1)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000215">
+        <rdfs:label xml:lang="en">EN_PHOTOTRANS_AIR</rdfs:label>
+        <obo:IAO_0000115>OHT 24: Phototransformation in air</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000216">
+        <rdfs:label xml:lang="en">EN_HYDROLYSIS</rdfs:label>
+        <obo:IAO_0000115>OHT 25: Hydrolysis</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000217">
+        <rdfs:label xml:lang="en">EN_PHOTOTRANS_WATER</rdfs:label>
+        <obo:IAO_0000115>OHT 26: Phototransformation in water</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000218">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000217"/>
+        <rdfs:label xml:lang="en">EP_PHOTOLYSIS_HALF_LIFE</rdfs:label>
+        <obo:IAO_0000115>Provide definition..</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000219">
+        <rdfs:label xml:lang="en">EN_PHOTOTRANS_SOIL</rdfs:label>
+        <obo:IAO_0000115>OHT 27: Phototransformation in soil</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000220">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000219"/>
+        <rdfs:label xml:lang="en">EP_PHOTOLYSIS_HALF_LIFE</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000221">
+        <rdfs:label xml:lang="en">EN_BIODEG_WATER_SCREEN</rdfs:label>
+        <obo:IAO_0000115>OHT 28: Biodegradation in water: screening tests</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000222">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000221"/>
+        <rdfs:label xml:lang="en">EP_PERCENT_BIODEG</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000223">
+        <rdfs:label xml:lang="en">EN_BIODEG_WATER_SIM</rdfs:label>
+        <obo:IAO_0000115>OHT 29: Biodegradation in water and sediment: simulation tests</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000224">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000223"/>
+        <rdfs:label xml:lang="en">EP_PERCENT_BIODEG</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000225">
+        <rdfs:label xml:lang="en">EN_BIODEG_SOIL</rdfs:label>
+        <obo:IAO_0000115>OHT 30: Biodegradation in soil => EN_STABILITY_IN_SOIL</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000226">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000225"/>
+        <rdfs:label xml:lang="en">EP_PERCENT_BIODEG</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000227">
+        <rdfs:label xml:lang="en">EN_DEGR_MODE_IN_USE</rdfs:label>
+        <obo:IAO_0000115>OHT 31: Mode of degradation in actual use</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000228">
+        <rdfs:label xml:lang="en">EN_BIOACCU_AQUATIC_SED</rdfs:label>
+        <obo:IAO_0000115>OHT 32 Bioaccumulation: aquatic/sediment =>EN_BIOACCUMULATION</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000229">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000228"/>
+        <rdfs:label xml:lang="en">EP_BIOACCUMULATION</rdfs:label>
+        <obo:IAO_0000115>OECD 305, 315, 317</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000230">
+        <rdfs:label xml:lang="en">EN_BIOACCU_TERRESTRIAL</rdfs:label>
+        <obo:IAO_0000115>OHT 33: Bioaccumulation: terrestrial</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000231">
+        <rdfs:label xml:lang="en">EN_ADSORPTION</rdfs:label>
+        <obo:IAO_0000115>OHT 34: Adsorption/desorption</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000232">
+        <rdfs:label xml:lang="en">EN_HENRY_LAW</rdfs:label>
+        <obo:IAO_0000115>OHT 35: Henry's Law constant</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000233">
+        <rdfs:label xml:lang="en">EN_DISPERSION_STABILITY_NANOMATERIAL</rdfs:label>
+        <obo:IAO_0000115>OHT 401: Dispersion stability of nanomaterials (Version [1.0]-[December 2018])</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000234">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000233"/>
+        <rdfs:label xml:lang="en">EP_DISPERSION_STABILITY</rdfs:label>
+        <obo:IAO_0000115>Dispersion stability refers to the ability of a dispersion to resist change in its properties over time.
+
+Ability to resist change or variation in the initial properties (state) of a dispersion over time, in other words, the quality of a dispersion in being free from alterations over a given time scale. [ISO 13097:2013]</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000235">
+        <rdfs:label xml:lang="en">EN_BIODURABILITY</rdfs:label>
+        <obo:IAO_0000115>Resistance to clearance by chemical and physical means, like resistance to chemical dissolution [ISO/TR 19057]
+(Should this be a phychem category endpoint ??)
+These endpoints might be moved to the PC_WATER_SOL section (wait for confirmation from WP3)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236">
+        <rdfs:label xml:lang="en">EC_FISH_TOX_SHORT</rdfs:label>
+        <obo:IAO_0000115>OHT 41: Short-term toxicity to fish</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000237">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236"/>
+        <rdfs:label xml:lang="en">EP_MORTALITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000238">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236"/>
+        <rdfs:label xml:lang="en">EP_DEVELOPMENT</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000239">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236"/>
+        <rdfs:label xml:lang="en">EP_COAGULATION_OF_FERTILISED_EGGS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000240">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236"/>
+        <rdfs:label xml:lang="en">EP_LACK_OF_SOMITE_FORMATION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000241">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236"/>
+        <rdfs:label xml:lang="en">EP_LACK_OF_DETACHMENT_OF_TAIL_BUD_FROM_YOLK_SAC</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000242">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000236"/>
+        <rdfs:label xml:lang="en">EP_LACK_OF_HEARTBEAT</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243">
+        <rdfs:label xml:lang="en">EC_FISH_TOX_CHRONIC</rdfs:label>
+        <obo:IAO_0000115>OHT 42: Long-term toxicity to fish</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000244">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_MORTALITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000245">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_DEVELOPMENT</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000246">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_GROWTH</rdfs:label>
+        <obo:IAO_0000115>OECD 215</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000247">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_HATCHING</rdfs:label>
+        <obo:IAO_0000115>OECD 210, 212</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000248">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_SURVIVAL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000249">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_WEIGHT</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000250">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_LENGTH</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000251">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000243"/>
+        <rdfs:label xml:lang="en">EP_ABNORMAL_APPEARANCE_AND_BEHAVIOR</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000252">
+        <rdfs:label xml:lang="en">EC_AQUATIC_INVERT_TOX_SHORT</rdfs:label>
+        <obo:IAO_0000115>OHT 43: Short-term toxicity to aquatic invertebrates</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000253">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000252"/>
+        <rdfs:label xml:lang="en">EP_IMMOBILIZATION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000254">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000252"/>
+        <rdfs:label xml:lang="en">EP_GROWTH</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000255">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000252"/>
+        <rdfs:label xml:lang="en">EP_YIELD</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000256">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000252"/>
+        <rdfs:label xml:lang="en">EP_BIOMASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000257">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000252"/>
+        <rdfs:label xml:lang="en">EP_MORTALITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000258">
+        <rdfs:label xml:lang="en">EC_AQUATIC_INVERT_TOX_CHRONIC</rdfs:label>
+        <obo:IAO_0000115>OHT 44: Long-term toxicity to aquatic invertebrates</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000259">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000258"/>
+        <rdfs:label xml:lang="en">EP_REPRODUCTION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000260">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000258"/>
+        <rdfs:label xml:lang="en">EP_HATCHING</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000261">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000258"/>
+        <rdfs:label xml:lang="en">EP_GROWTH</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000262">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000258"/>
+        <rdfs:label xml:lang="en">EP_IMMOBILIZATION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000263">
+        <rdfs:label xml:lang="en">EC_ALGAE_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 45: Toxicity to aquatic algae and cyanobacteria</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000264">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000263"/>
+        <rdfs:label xml:lang="en">EP_GROWTH</rdfs:label>
+        <obo:IAO_0000115>OECD 201</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000265">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000263"/>
+        <rdfs:label xml:lang="en">EP_BIOMASS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000266">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000263"/>
+        <rdfs:label xml:lang="en">EP_YIELD</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000267">
+        <rdfs:label xml:lang="en">EC_AQ_PLANTS_NONE_ALGAE</rdfs:label>
+        <obo:IAO_0000115>OHT 46: Toxicity to aquatic plants other than algae</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000268">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000267"/>
+        <rdfs:label xml:lang="en">EP_GROWTH</rdfs:label>
+        <obo:IAO_0000115>OECD 221</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000269">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000267"/>
+        <rdfs:label xml:lang="en">EP_YIELD</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000270">
+        <rdfs:label xml:lang="en">EC_BAC_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 47: Toxicity to microorganisms</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000271">
+        <rdfs:label xml:lang="en">EC_SEDIMENT_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 49: Sediment toxicity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000272">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000271"/>
+        <rdfs:label xml:lang="en">EP_EMERGENCE</rdfs:label>
+        <obo:IAO_0000115>OECD 218,219</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000273">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000271"/>
+        <rdfs:label xml:lang="en">EP_GROWTH</rdfs:label>
+        <obo:IAO_0000115>OECD 219</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000274">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000271"/>
+        <rdfs:label xml:lang="en">EP_SURVIVAL</rdfs:label>
+        <obo:IAO_0000115>OECD 225</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000275">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000271"/>
+        <rdfs:label xml:lang="en">EP_LUMINESCENCE</rdfs:label>
+        <obo:IAO_0000115>E-WS-1c-e (not sure how to use this one.. IC50?)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000276">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000271"/>
+        <rdfs:label xml:lang="en">EP_REPRODUCTION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000277">
+        <rdfs:label xml:lang="en">EC_SOIL_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 50-1: Toxicity to soil macro-organisms except anthropods</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000278">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000277"/>
+        <rdfs:label xml:lang="en">EP_SURVIVAL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000279">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000277"/>
+        <rdfs:label xml:lang="en">EP_REPRODUCTION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000280">
+        <rdfs:label xml:lang="en">EC_TERR_ARTHROP_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 50-2: Toxicity to terrestrial arthropods =>EC_HONEYBEESTOX</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000281">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000280"/>
+        <rdfs:label xml:lang="en">EP_DEVELOPMENT</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000282">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000280"/>
+        <rdfs:label xml:lang="en">EP_EMERGENCE</rdfs:label>
+        <obo:IAO_0000115>OECD 228</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000283">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000280"/>
+        <rdfs:label xml:lang="en">EP_FEMALE_SURVIVOR</rdfs:label>
+        <obo:IAO_0000115>OECD 226</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000284">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000280"/>
+        <rdfs:label xml:lang="en">EP_HATCHING</rdfs:label>
+        <obo:IAO_0000115>OECD 228</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000285">
+        <rdfs:label xml:lang="en">EC_TERR_PLANT_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 51: Toxicity to terrestrial plants</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000286">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000285"/>
+        <rdfs:label xml:lang="en">EP_DRY_SHOOT_WEIGHT</rdfs:label>
+        <obo:IAO_0000115>OECD 227</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000287">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000285"/>
+        <rdfs:label xml:lang="en">EP_EMERGENCE</rdfs:label>
+        <obo:IAO_0000115>OECD 208</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000288">
+        <rdfs:label xml:lang="en">EC_SOIL_MICRO_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 52: Toxicity to soil microorganisms</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000289">
+        <rdfs:label xml:lang="en">EC_BIRDS_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 53: Toxicity to birds</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000290">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000289"/>
+        <rdfs:label xml:lang="en">EP_CRACKED_EGGS</rdfs:label>
+        <obo:IAO_0000115>OECD 206, OPPTS 850.2300</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000291">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000289"/>
+        <rdfs:label xml:lang="en">EP_EGG_PRODUCTION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000292">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000289"/>
+        <rdfs:label xml:lang="en">EP_EGG_SHELL_THICKNESS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000293">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000289"/>
+        <rdfs:label xml:lang="en">EP_HATCHABILITY_AND_EFFECTS_ON_YOUNG_BIRDS</rdfs:label>
+        <obo:IAO_0000115>OECD 206</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000294">
+        <rdfs:label xml:lang="en">HH_BASIC_TOX</rdfs:label>
+        <obo:IAO_0000115>OHT 58: Basic toxicokinetics</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000295">
+        <rdfs:label xml:lang="en">HH_DERMAL_ABSORP</rdfs:label>
+        <obo:IAO_0000115>OHT 59: Dermal absorption</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000296">
+        <rdfs:label xml:lang="en">HH_ACUTE_TOX_ORAL</rdfs:label>
+        <obo:IAO_0000115>OHT 60: Acute toxicity: oral</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000297">
+        <rdfs:label xml:lang="en">HH_ACUTE_TOX_INHAL</rdfs:label>
+        <obo:IAO_0000115>OHT 61: Acute toxicity: inhalation</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000298">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000297"/>
+        <rdfs:label xml:lang="en">EP_TOX_CATEGORY_STIS</rdfs:label>
+        <obo:IAO_0000115>Toxicity category obtained from in vivo STIS assay.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000299">
+        <rdfs:label xml:lang="en">HH_ACUTE_TOX_DERMAL</rdfs:label>
+        <obo:IAO_0000115>OHT 62: Acute toxicity: dermal</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000300">
+        <rdfs:label xml:lang="en">HH_SKIN_IRRITATION</rdfs:label>
+        <obo:IAO_0000115>OHT 64: Skin irritation/corrosion</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000301">
+        <rdfs:label xml:lang="en">HH_EYE_IRRITATION</rdfs:label>
+        <obo:IAO_0000115>OHT 65: Eye irritation</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000302">
+        <rdfs:label xml:lang="en">HH_SKIN_SENSITISATION</rdfs:label>
+        <obo:IAO_0000115>OHT 66-1: Skin sensitisation</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000303">
+        <rdfs:label xml:lang="en">HH_RESP_SENSITISATION</rdfs:label>
+        <obo:IAO_0000115>OHT 66-2: Respiratory sensitisation</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304">
+        <rdfs:label xml:lang="en">HH_REPEATED_ORAL</rdfs:label>
+        <obo:IAO_0000115>OHT 67: Repeated dose toxicity: oral</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000305">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_CELL_NUMBER_IN_BALF</rdfs:label>
+        <obo:IAO_0000115>https://www.rivm.nl/sites/default/files/2019-01/NANoREG_D4_15_DR_Protocol_for_inhalation_exposure_and_choice_of_biological_relevant_endpoints.pdf</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000306">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_MACROPHAGES_NUMBER_IN_BALF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000307">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_NEUTROPHILS_NUMBER_IN_BALF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000308">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_LYMPHOCYTES_NUMBER_IN_BALF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000309">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_EOSINOPHILS_NUMBER_IN_BALF</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000310">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_MACROPHAGE_PERC_IN_BALF</rdfs:label>
+        <obo:IAO_0000115>The percentage of macrophage cells in the BAL fluid. 
+different cell types (macrophages, neutrophils, eosinophils) in the BALF</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000311">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_NEUTROPHILS_PERC_IN_BALF</rdfs:label>
+        <obo:IAO_0000115>The percentage of neutrophils cells in the BAL fluid.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000312">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_LYMPHOCYTES_PERC_IN_BALF</rdfs:label>
+        <obo:IAO_0000115>The percentage of lymphocyte cells in the BAL fluid.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000313">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000304"/>
+        <rdfs:label xml:lang="en">EP_ALVEOLAR_EOSINOPHILS_PERC_IN_BALF</rdfs:label>
+        <obo:IAO_0000115>The percentage of eosinophil cells in the BAL fluid.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000314">
+        <rdfs:label xml:lang="en">HH_REPEATED_INHAL</rdfs:label>
+        <obo:IAO_0000115>OHT 68: Repeated dose toxicity: inhalation</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000315">
+        <rdfs:label xml:lang="en">HH_REPEATED_DERMAL</rdfs:label>
+        <obo:IAO_0000115>OHT 69-1: Repeated dose toxicity: dermal</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000316">
+        <rdfs:label xml:lang="en">HH_GENETIC_IN_VITRO</rdfs:label>
+        <obo:IAO_0000115>OHT 70: Genetic toxicity in vitro
+ gene mutation, chromosomal damage (clastogenicity) and numerical chromosomal damage (aneuploidy)?</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000317">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000316"/>
+        <rdfs:label xml:lang="en">EP_DNA_STRAND_BREAKS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000318">
+        <rdfs:label xml:lang="en">HH_GENETIC_IN_VIVO</rdfs:label>
+        <obo:IAO_0000115>OHT 71: Genetic toxicity in vivo</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000319">
+        <rdfs:label xml:lang="en">HH_BIOPERSISTENCE</rdfs:label>
+        <obo:IAO_0000115>Isn't this the same as EN_BIODURABILITY??
+Perhaps also move to PC_WATER_SOL ..</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000320">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000319"/>
+        <rdfs:label xml:lang="en">EP_RETAINED_FIBRE_BURDEN</rdfs:label>
+        <obo:IAO_0000115>Retained burden measured  in mg particle / g lung tissue, used to calculate NF half-life
+%</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000321">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000319"/>
+        <rdfs:label xml:lang="en">EP_RETAINED_FIBRE_HALF_TIME</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322">
+        <rdfs:label xml:lang="en">HH_CYTOTOXICITY</rdfs:label>
+        <obo:IAO_0000115>Cytotoxicity (not covered by OHT??)
+Treating cells with the cytotoxic compound can result in a variety of cell fates.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000323">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_APOPTOSIS</rdfs:label>
+        <obo:IAO_0000115>The cells can activate a genetic program of controlled cell death (apoptosis).</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000324">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_NECROSIS</rdfs:label>
+        <obo:IAO_0000115>The cells may undergo necrosis, in which they lose membrane integrity and die rapidly as a result of cell lysis.</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000325">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_CELL_VIABILITY</rdfs:label>
+        <obo:IAO_0000115>The cells can stop actively growing and dividing (a decrease in cell viability) => ENM_0000068
+number of “healthy” cells within a population</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000326">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_CELL_PROLIFIRATION</rdfs:label>
+        <obo:IAO_0000115>number of actively dividing cells in a population</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000327">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_CELL_VIABILITY_ABSORPTION_450_NM</rdfs:label>
+        <obo:IAO_0000115>Absorption of light (450 nm) expressed in AU???</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000328">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_CELL_VIABILITY_ABSORPTION_540_NM</rdfs:label>
+        <obo:IAO_0000115>Absorption of light (540 nm) expressed in AU???</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000329">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_LDH_CYTOTOXICITY_PERC_OF_CONTROL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000330">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000322"/>
+        <rdfs:label xml:lang="en">EP_ALAMAR_BLUE_CYTOTOXICITY_PERC_OF_CONTROL</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331">
+        <rdfs:label xml:lang="en">HH_INFLAMMATION</rdfs:label>
+        <obo:IAO_0000115>Inflammation category (not yet covered by OHT, inhalation IATA)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000332">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_INFLAMMASOME</rdfs:label>
+        <obo:IAO_0000115>IL-1β concentration (pg/ml)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000333">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_INVITRO_CYTOKINE_RELEASE</rdfs:label>
+        <obo:IAO_0000115>Cytokine concentration (pg/ml)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000334">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_CATHEPSINB_RELEASE</rdfs:label>
+        <obo:IAO_0000115>Release concentration pg/ml</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000335">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_CATHEPSINB_ACTIVITY</rdfs:label>
+        <obo:IAO_0000115>Activity x-fold change over negative control..</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000336">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VITRO_GRANULOMA</rdfs:label>
+        <obo:IAO_0000115>Development of 3D granuloma in response to long-term in vitro exposure to NF based on model from Sanchez et al 2011. 
+Qualitative Yes/No</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000337">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VITRO_GRANULOMA_SIZE</rdfs:label>
+        <obo:IAO_0000115>Mean diameter: µm
+These might just be endpoint parameters of IP_IN_VITRO_GRANULOMA (to be deprecated)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000338">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VITRO_GRANULOMA_TIME</rdfs:label>
+        <obo:IAO_0000115>Days post exposure
+These might just be endpoint parameters of IP_IN_VITRO_GRANULOMA (to be deprecated)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000339">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VIVO_CELL_COUNT</rdfs:label>
+        <obo:IAO_0000115>Absolute: #/L
+Relative: %</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000340">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VIVO_NEUTROPHIL_INFLUX</rdfs:label>
+        <obo:IAO_0000115>Absolute: #/L
+Relative: %</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000341">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VIVO_MACROPHAGE_COUNT</rdfs:label>
+        <obo:IAO_0000115>Absolute: #/L
+Relative: %</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000342">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VIVO_CYTOKINE_RELEASE</rdfs:label>
+        <obo:IAO_0000115>Cytokine conc.: pg/mL</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000343">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_IN_VIVO_INFLAMMATION</rdfs:label>
+        <obo:IAO_0000115>#/# animals with minimal, slight, moderate, marked or massive bronchiolar/ alveolar inflammation</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000344">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000331"/>
+        <rdfs:label xml:lang="en">EP_LYSOSOMAL_DISRUPTION</rdfs:label>
+        <obo:IAO_0000115>Qualitative Yes|No</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000345">
+        <rdfs:label xml:lang="en">HH_FIBROSIS</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000346">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000345"/>
+        <rdfs:label xml:lang="en">EP_FIBROSIS</rdfs:label>
+        <obo:IAO_0000115>Is this an effect endpoint of cytotoxicity or a category on its own?</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000347">
+        <rdfs:label xml:lang="en">HH_OXIDATIVE_STRESS</rdfs:label>
+        <obo:IAO_0000115>Oxidative stress is caused by the presence of any of a number of reactive oxygen species (ROS) which the cell is unable to counterbalance. The result is damage to one or more biomolecules including DNA, RNA, proteins and lipids. Oxidative stress has been implicated in the natural aging process as well as a variety of disease states:
+ENM_0000037</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000348">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000347"/>
+        <rdfs:label xml:lang="en">EP_RFU_CHANGE</rdfs:label>
+        <obo:IAO_0000115>Change in RFU (Relative Fluorescent Unit)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000349">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000347"/>
+        <rdfs:label xml:lang="en">EP_LUCIFERASE_ACTIVITY</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000350">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000347"/>
+        <rdfs:label xml:lang="en">EP_FOLD_LUCIFERASE_ACTIVITY_INDUCTION</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000351">
+        <rdfs:label xml:lang="en">HH_CELLULAR_INTERNALIZATION</rdfs:label>
+        <obo:IAO_0000115>Introduced by H-O-1a</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000352">
+        <rdfs:label xml:lang="en">HH_CARCINOGENICITY</rdfs:label>
+        <obo:IAO_0000115>OHT 72: Carcinogenicity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000353">
+        <rdfs:label xml:lang="en">HH_REPRODUCTION</rdfs:label>
+        <obo:IAO_0000115>OHT 73: Toxicity to reproduction</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000354">
+        <rdfs:label xml:lang="en">HH_DEVELOPMENTAL</rdfs:label>
+        <obo:IAO_0000115>OHT 74: Developmental toxicity/teratogenicity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000355">
+        <rdfs:label xml:lang="en">HH_NEUROTOXICITY</rdfs:label>
+        <obo:IAO_0000115>OHT 76: Neurotoxicity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000356">
+        <rdfs:label xml:lang="en">HH_IMMUNOTOXICITY</rdfs:label>
+        <obo:IAO_0000115>OHT 77: Immunotoxicity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000357">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000356"/>
+        <rdfs:label xml:lang="en">EP_TNF_A_RELEASE</rdfs:label>
+        <obo:IAO_0000115>Release of cytokine TNF-Α (see ELISA assay)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000358">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000356"/>
+        <rdfs:label xml:lang="en">EP_IL_1B_RELEASE</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000359">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000356"/>
+        <rdfs:label xml:lang="en">EP_IL_6_RELEASE</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000360">
+        <rdfs:label xml:lang="en">HH_BARRIER_INTEGRITY</rdfs:label>
+        <obo:IAO_0000115>Barrier integrity</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000361">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000360"/>
+        <rdfs:label xml:lang="en">EP_INVITRO_BARRIER_INTEGRITY</rdfs:label>
+        <obo:IAO_0000115>NANoREG D5.03 DR, SOP 03 Ohm/cm2</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000362">
+        <rdfs:label xml:lang="en">HH_LUNG_DEPOSITION</rdfs:label>
+        <obo:IAO_0000115>Newly introduced IATA H-I-1   (perhaps move as HH_LUNG_DEPOSITION?)</obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000363">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000362"/>
+        <rdfs:label xml:lang="en">EP_DEPOSITION_FRACTION_TRACHEA_BRONCHI</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000364">
+        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_00000362"/>
+        <rdfs:label xml:lang="en">EP_DEPOSITION_FRACTION_ALVEOLI</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+    </owl:Class>
+
+
+</rdf:RDF>
+
