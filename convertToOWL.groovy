@@ -36,7 +36,7 @@ for (kb in termList.knowledgebases) {
         cathDescription = ""
       }
       println """
-    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_${cathID}">
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${cathID}">
         <rdfs:label xml:lang="en">${cathName}</rdfs:label>${cathDescription}
     </owl:Class>
 """
@@ -60,8 +60,8 @@ for (kb in termList.knowledgebases) {
           epDescription = ""
         }
         println """
-    <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_${epID}">
-        <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_${cathID}"/>
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${epID}">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${cathID}"/>
         <rdfs:label xml:lang="en">${epName}</rdfs:label>${epDescription}
     </owl:Class>
 """
