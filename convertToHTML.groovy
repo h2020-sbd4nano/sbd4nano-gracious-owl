@@ -58,7 +58,7 @@ for (kb in termList.knowledgebases) {
           epDescription = "-"
         }
         println """
-    <h3 id=\"${epID}\">"${epName}</h3>
+    <h3 id=\"${epID}\">${epName}</h3>
     <p>
       <ul>
         <li>Description: ${epDescription}</li>
