@@ -67,10 +67,10 @@ for (kb in termList.knowledgebases) {
     </p>
 """    
       }
-    }
-    println """
+      println """
   </ul>
 """    
+    }
   }
 }
 println """
