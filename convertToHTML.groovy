@@ -43,7 +43,7 @@ for (kb in termList.knowledgebases) {
   <p>
     <ul>
       <li>Description: ${cathDescription}</li>
-      <li>IRI: ${cathIRI}</li>
+      <li>IRI: <a href="${cathIRI}">${cathIRI}</a></li>
     </ul>
   </p>
   <ul>
