@@ -68,6 +68,9 @@ for (kb in termList.knowledgebases) {
 """    
       }
     }
+    println """
+  </ul>
+"""    
   }
 }
 println """
