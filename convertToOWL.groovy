@@ -43,7 +43,7 @@ for (kb in termList.knowledgebases) {
       for (ep in category.enumerates) {
         epName = ep.name
         if (ep.id != null) {
-          cathID = ep.id
+          epID = ep.id
         } else {
           counter++;
           epID = (""+counter).padLeft(8,'0')
