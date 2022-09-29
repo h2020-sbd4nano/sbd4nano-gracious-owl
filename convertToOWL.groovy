@@ -1,10 +1,9 @@
 
 // input
-XmlParser parser = new XmlParser()
-def termList = parser.parse (new FileInputStream("DescriptorFramework.xml"))
+parser = new groovy.json.JsonSlurper();
+def termList = parser.parse(new File("blueprint_20210928.json"))
 
 // output (just to STDOUT for now)
-
 
 println """<?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#"
@@ -19,29 +18,55 @@ println """<?xml version="1.0"?>
 
 // endpoints
 int counter = 0
-termList.'endpoint_descriptors'.'endpoint_category'.each { cath ->
-  cathName = cath.'@name'
-  counter++;
-  cathID = (""+counter).padLeft(8,'0')
-  cathDescription = cath.definition.text().trim().replaceAll("<", "&lt;")
-  println """
+for (kb in termList.knowledgebases) {
+  if (kb.name == "ENDPOINT_KB") {
+    for (category in kb.enumerations) {
+      cathName = category.name
+      if (category.id != null) {
+        cathID = category.id
+      } else {
+        counter++;
+        cathID = (""+counter).padLeft(8,'0')
+      }
+      if (category.note != null) {
+        note = category.note.trim().replaceAll("<", "&lt;")
+        cathDescription = """
+        <obo:IAO_0000115>${note}</obo:IAO_0000115>"""
+      } else {
+        cathDescription = ""
+      }
+      println """
     <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_${cathID}">
-        <rdfs:label xml:lang="en">${cathName}</rdfs:label>
-        <obo:IAO_0000115>${cathDescription}</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">${cathName}</rdfs:label>${cathDescription}
     </owl:Class>
 """
-  cath.'result_endpoints'.'result_endpoint'.each { ep ->
-    epName = ep.'@name'
-    counter++;
-    epID = (""+counter).padLeft(8,'0')
-    epDescription = ep.definition.text().trim().replaceAll("<", "&lt;").replaceAll("&", "&amp;")
-    println """
+      for (ep in category.enumerates) {
+        epName = ep.name
+        if (ep.id != null) {
+          cathID = ep.id
+        } else {
+          counter++;
+          epID = (""+counter).padLeft(8,'0')
+        }
+        if (ep.note != null) {
+          if (ep.note instanceof String) {
+            note = ep.note.trim().replaceAll("<", "&lt;").replaceAll("&", "&amp;")
+          } else {
+            note = ep.note.definition.text.trim().replaceAll("<", "&lt;").replaceAll("&", "&amp;")
+          }
+          epDescription = """
+        <obo:IAO_0000115>${note}</obo:IAO_0000115>"""
+        } else {
+          epDescription = ""
+        }
+        println """
     <owl:Class rdf:about="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_${epID}">
         <rdfs:subClassOf rdf:resource="http://www.bigcat.unimaas.nl/sbd4nano/gracious.owl#GR_${cathID}"/>
-        <rdfs:label xml:lang="en">${epName}</rdfs:label>
-        <obo:IAO_0000115>${epDescription}</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">${epName}</rdfs:label>${epDescription}
     </owl:Class>
-"""    
+"""
+      }
+    }
   }
 }
 
