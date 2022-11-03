@@ -15,7 +15,8 @@ println """<body>
 <h1>GRACIOUS framework blueprint</h1>
 <p>
 This document is a HTML translation of the GRACIOUS framework blueprint (Traas, Lion, & Vanhauten, Ralph. (2021). doi:<a href="https://doi.org/10.5281/zenodo.6140453">10.5281/zenodo.6140453</a>).
-This work is part of <a href="https://www.sbd4nano.eu/">SbD4Nano</a> and has received funding from the European Union’s Horizon 2020 research and innovation program under grant agreement No. 862195.
+This work is part of <a href="https://www.sbd4nano.eu/">SbD4Nano</a> and has received funding from the European Union’s Horizon 2020 research and innovation program under
+grant agreement No. <a href="https://cordis.europa.eu/project/id/862195">862195</a>.
 </p>
 """
 // endpoints
