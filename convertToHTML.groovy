@@ -77,6 +77,7 @@ for (kb in termList.knowledgebases) {
       <ul>
         <li>Description: ${epDescription}</li>
         <li>IRI: <a href="${epIRI}">${epIRI}</a></li>
+        <li><i>owl:sameAs</i> ${epSameAsIRI}</li>
       </ul>
     </p>
 """    
