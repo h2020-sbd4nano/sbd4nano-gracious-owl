@@ -28,6 +28,8 @@ for (kb in termList.knowledgebases) {
         counter++;
         cathID = (""+counter).padLeft(8,'0')
       }
+      cathIRI = "https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${cathID}"
+      sameAsIRI = "https://h2020-sbd4nano.github.io/gracious-blueprint/2021/${cathName}"
       if (category.note != null) {
         note = category.note.trim().replaceAll("<", "&lt;")
         cathDescription = """
@@ -36,8 +38,9 @@ for (kb in termList.knowledgebases) {
         cathDescription = ""
       }
       println """
-    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${cathID}">
+    <owl:Class rdf:about="${cathIRI}">
         <rdfs:label xml:lang="en">${cathName}</rdfs:label>${cathDescription}
+        <owl:sameAs rdf:resource="${sameAsIRI}"/>
     </owl:Class>
 """
       for (ep in category.enumerates) {
@@ -48,6 +51,8 @@ for (kb in termList.knowledgebases) {
           counter++;
           epID = (""+counter).padLeft(8,'0')
         }
+        epIRI = "https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${epID}"
+        epSameAsIRI = "https://h2020-sbd4nano.github.io/gracious-blueprint/2021/${epName}"
         if (ep.note != null) {
           if (ep.note instanceof String) {
             note = ep.note.trim().replaceAll("<", "&lt;").replaceAll("&", "&amp;")
@@ -60,9 +65,10 @@ for (kb in termList.knowledgebases) {
           epDescription = ""
         }
         println """
-    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${epID}">
-        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${cathID}"/>
+    <owl:Class rdf:about="${epIRI}">
+        <rdfs:subClassOf rdf:resource="${cathIRI}"/>
         <rdfs:label xml:lang="en">${epName}</rdfs:label>${epDescription}
+        <owl:sameAs rdf:resource="${epSameAsIRI}"/>
     </owl:Class>
 """
       }

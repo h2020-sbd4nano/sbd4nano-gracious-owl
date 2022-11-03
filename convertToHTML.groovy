@@ -33,6 +33,7 @@ for (kb in termList.knowledgebases) {
         cathID = (""+counter).padLeft(8,'0')
       }
       cathIRI = "https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${cathID}"
+      sameAsIRI = "https://h2020-sbd4nano.github.io/gracious-blueprint/2021/${cathName}"
       if (category.note != null) {
         note = category.note.trim().replaceAll("<", "&lt;")
         cathDescription = note
@@ -45,6 +46,7 @@ for (kb in termList.knowledgebases) {
     <ul>
       <li>Description: ${cathDescription}</li>
       <li>IRI: <a href="${cathIRI}">${cathIRI}</a></li>
+      <li><i>owl:sameAs</i> ${sameAsIRI}</li>
     </ul>
   </p>
   <ul>
@@ -58,6 +60,7 @@ for (kb in termList.knowledgebases) {
           epID = (""+counter).padLeft(8,'0')
         }
         epIRI = "https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#${epID}"
+        epSameAsIRI = "https://h2020-sbd4nano.github.io/gracious-blueprint/2021/${epName}"
         if (ep.note != null) {
           if (ep.note instanceof String) {
             note = ep.note.trim().replaceAll("<", "&lt;").replaceAll("&", "&amp;")
