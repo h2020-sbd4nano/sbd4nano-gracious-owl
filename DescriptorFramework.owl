@@ -9,6 +9,404 @@
   </owl:Ontology>
 
 
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#03f8e142-cef2-b642-8c07-d89ff53f9647">
+        <rdfs:label xml:lang="en">GroupingPurpose</rdfs:label>
+        <obo:IAO_0000115>The purpose/reason for grouping. (See GRACIOUS D4.2)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/GroupingPurpose"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#7683a1ca-c76b-484f-9808-5bf1e4fc8a13">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#03f8e142-cef2-b642-8c07-d89ff53f9647"/>
+        <rdfs:label xml:lang="en">'precautionary'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'precautionary'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#59d3d478-525b-0b41-9aac-8661e560aa43">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#03f8e142-cef2-b642-8c07-d89ff53f9647"/>
+        <rdfs:label xml:lang="en">'safe-by-design'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'safe-by-design'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#5ebc08c8-20ca-d649-a826-bd0bd7deb58b">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#03f8e142-cef2-b642-8c07-d89ff53f9647"/>
+        <rdfs:label xml:lang="en">'regulatory'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'regulatory'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9">
+        <rdfs:label xml:lang="en">HypothesisOutcome</rdfs:label>
+        <obo:IAO_0000115>Used to indicate the state of IATA evaluation.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/HypothesisOutcome"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8454f275-07ee-2148-bc71-fa629541f952">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9"/>
+        <rdfs:label xml:lang="en">INCL</rdfs:label>
+        <obo:IAO_0000115>The considered material has been 'included' based upon the the grouping rules in the hypothesis.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/INCL"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#593f5c0c-9a18-8f4d-8a33-ac739397c1bd">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9"/>
+        <rdfs:label xml:lang="en">EXCL</rdfs:label>
+        <obo:IAO_0000115>The considered material has been 'excluded' based upon the the grouping rules in the hypothesis.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/EXCL"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8fc607e4-cd82-0045-9e98-6a25e5205c05">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9"/>
+        <rdfs:label xml:lang="en">UND</rdfs:label>
+        <obo:IAO_0000115>The considered material cannot be 'included' or 'excluded' based upon the grouping rules in the hypothesis. (?)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/UND"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#c9dccf8e-ae55-4b48-971c-24aff923fb93">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9"/>
+        <rdfs:label xml:lang="en">MI</rdfs:label>
+        <obo:IAO_0000115>The considered material cannot be grouped because not all information needed to apply the grouping rules in the hypothesis is available (yet).</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/MI"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#f4e64e19-7c97-3f44-811a-bac3fb420b09">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9"/>
+        <rdfs:label xml:lang="en">IRR</rdfs:label>
+        <obo:IAO_0000115>The hypothesis is irrelevant for the context</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/IRR"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#2ca2d7cd-96b7-1547-b63d-9c7838d4c595">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#bd4df21f-d079-4d43-80e1-2a3819ebd9b9"/>
+        <rdfs:label xml:lang="en">NYI</rdfs:label>
+        <obo:IAO_0000115>The hypothesis is not yet implemented.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/NYI"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#2906256d-752a-0e4f-8779-492a923e82c0">
+        <rdfs:label xml:lang="en">YesNo</rdfs:label>
+        <obo:IAO_0000115>Used as decision node outcome.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/YesNo"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#be3cd4af-eb34-7f43-98cf-193fb44be55f">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#2906256d-752a-0e4f-8779-492a923e82c0"/>
+        <rdfs:label xml:lang="en">Yes</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/Yes"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#4151c5d2-f020-224c-b34b-c0fcf21415e7">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#2906256d-752a-0e4f-8779-492a923e82c0"/>
+        <rdfs:label xml:lang="en">No</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/No"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#40870779-e998-754c-9a8d-a9015c5107e1">
+        <rdfs:label xml:lang="en">TierLevel</rdfs:label>
+        <obo:IAO_0000115>The IATAs follow a tiered approach per decision node within them. Each tier level represents a level of confidence/certainty the information provides to determine the outcome of a decision node.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/TierLevel"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#ee841c00-d183-4747-b93e-2c2f262e87b1">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#40870779-e998-754c-9a8d-a9015c5107e1"/>
+        <rdfs:label xml:lang="en">TL1</rdfs:label>
+        <obo:IAO_0000115>Tier 1, is the lowest tier level mostly used as a screening level, either with conservative outcomes, or outcomes with the higher level of uncertainty.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/TL1"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#e5a6a8a0-b96e-2a4a-8c47-157b10a06db4">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#40870779-e998-754c-9a8d-a9015c5107e1"/>
+        <rdfs:label xml:lang="en">TL2</rdfs:label>
+        <obo:IAO_0000115>Tier 2, information/data and assays used at tier2 provide a higher level of confidence for the decision node outcome, however are often more costly.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/TL2"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#d3b595a8-f467-094f-98ec-150e9f91eade">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#40870779-e998-754c-9a8d-a9015c5107e1"/>
+        <rdfs:label xml:lang="en">TL3</rdfs:label>
+        <obo:IAO_0000115>Tier 3, provides the highest level of confidence for the decision node outcome. The results are often based on in vivo studies or experiments in actual relevant media.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/TL3"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593">
+        <rdfs:label xml:lang="en">ContextSwitchReason</rdfs:label>
+        <obo:IAO_0000115>Each IATA is evaluated within a fixed context. The context is determined by the target material and the environmental medium in case of environmental IATAs. In case the target material dissolves/transformes and/or moves to another medium due to transport processes a context switch occurs.
+A context switch creates a new evaluation context and contains and triggers its own relevant IATAs to be assessed.   
+This enumeration is used to indicate the cause of that context switch.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ContextSwitchReason"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#9c65a3c5-9c73-6546-8b15-3e843818048b">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coMaterialReadAcross</rdfs:label>
+        <obo:IAO_0000115>Conceptual, read across of the target material to another source material.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coMaterialReadAcross"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#90302414-0684-d542-a0ef-92d24d362370">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coMediumReadAcross</rdfs:label>
+        <obo:IAO_0000115>Conceptual, would allow read across from a target medium towards a source medium.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coMediumReadAcross"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#56e45597-3fcb-0d43-be31-d4084423f29f">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coExposureReadAcross</rdfs:label>
+        <obo:IAO_0000115>Conceptual, would allow read across from existing exposure conditions to a source exposure scenario. (e.g. read across of exposure concentration estimation etc.)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coExposureReadAcross"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#b16bed54-e989-2143-9106-fb6d0df569c1">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coChemicalReadAcross</rdfs:label>
+        <obo:IAO_0000115>Read across of target material to a chemical (either molecule or ionic form)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coChemicalReadAcross"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#ff3264e0-9f28-9e4c-badd-03277d308197">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coUncoatedReadAcross</rdfs:label>
+        <obo:IAO_0000115>Read across of target nanomaterial to an equivalent nanomaterial without the coating(s) applied.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coUncoatedReadAcross"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#d8dd6325-bd76-354a-818c-53faa95b2e1d">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coSettleProcess</rdfs:label>
+        <obo:IAO_0000115>The context switch is caused by transport of the target material between two media due to gravitational settling. (e.g. river water to river sediment)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coSettleProcess"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#fd3582d1-538a-f24d-9252-418c9c8d60e8">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coTransformationProcess</rdfs:label>
+        <obo:IAO_0000115>The context switch is caused by the transformation of the current target material into a new target material as a result of  speciation reactions with  within the surrounding environmental mediium.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coTransformationProcess"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#0535e550-60a5-d445-a2b1-45d7ff4cd922">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coDissolutionProcess</rdfs:label>
+        <obo:IAO_0000115>The context switch is caused by dissolution of the target material into solutes (ions/molecules) within the same environmental medium.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coDissolutionProcess"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#fc63c27d-5b8b-9b46-ac90-2549a04fadd1">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#963f4b5d-dda7-c24b-90b3-53a31ef2b593"/>
+        <rdfs:label xml:lang="en">coTransportProcess</rdfs:label>
+        <obo:IAO_0000115>A context switch caused by an advection process transporting the target material from one environmental zone towards another zone.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/coTransportProcess"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1">
+        <rdfs:label xml:lang="en">GroupDescriptor</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/GroupDescriptor"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#4b7f96fd-23ca-3745-8596-0f576683a2cf">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF is respirable, biopersistent, rigid HARN with potential to cause lung hazard'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF is respirable, biopersistent, rigid HARN with potential to cause lung hazard'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#a0402292-b199-4843-b3f2-12013c2160ae">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF is respirable, biopersistent, rigid HARN with potential to cause mesothelioma'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF is respirable, biopersistent, rigid HARN with potential to cause mesothelioma'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#0f5e94b4-00ba-094a-9459-eb4be2de8e8a">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF aquatic toxicity is driven by the fate and toxicity characteristics of the solutes'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF aquatic toxicity is driven by the fate and toxicity characteristics of the solutes'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#a210b8f3-dffb-e24f-b6a6-60295050762a">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF aquatic toxicity is driven by the fate and toxicity characteristics of the NF in aquous environment'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF aquatic toxicity is driven by the fate and toxicity characteristics of the NF in aquous environment'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#2d6b0562-85b7-8f4e-b056-e135ff223f49">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF dissolves instantaneous in OGI fluids'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF dissolves instantaneous in OGI fluids'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#21ecbb90-4089-2a47-8e85-3aab56326623">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF dissolves quick in OGI fluids'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF dissolves quick in OGI fluids'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#99efa436-dff0-104e-a8f8-d3c9d26d8686">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'None biopersistent NF dissolves quick in OGI fluids'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'None biopersistent NF dissolves quick in OGI fluids'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#1886bdd4-94b9-3349-bbf1-bdb27f6db5f3">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF dissolves gradually in OGI fluids'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF dissolves gradually in OGI fluids'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#de424504-0233-a14a-8d73-03b06a0284f6">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'Biopersistent and systemic toxic NF and/or constituent ions or molecules'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'Biopersistent and systemic toxic NF and/or constituent ions or molecules'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#f87e0afc-62ea-a841-b226-903068da2171">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'Highly biopersistent NF and chronic systemic toxic'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'Highly biopersistent NF and chronic systemic toxic'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#0320d545-fef4-404c-b895-1da4b2a2ac5f">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8a49a056-8b15-2142-b9c6-cc578d86c1b1"/>
+        <rdfs:label xml:lang="en">'NF dissolves very slow in OGI fluids'</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/'NF dissolves very slow in OGI fluids'"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#aec6ed1d-895e-2d48-afcd-b58bc2ec408a">
+        <rdfs:label xml:lang="en">ContextType</rdfs:label>
+        <obo:IAO_0000115>Type of evaluation context.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ContextType"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#5d168324-1ff0-294c-bfe8-de81d8475fa3">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#aec6ed1d-895e-2d48-afcd-b58bc2ec408a"/>
+        <rdfs:label xml:lang="en">ctHH</rdfs:label>
+        <obo:IAO_0000115>Direct human health, start context for inhalation, oral, dermal IATA. (No use description required)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ctHH"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#f3433a22-6b7b-a94f-9b63-7f8db5cbde03">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#aec6ed1d-895e-2d48-afcd-b58bc2ec408a"/>
+        <rdfs:label xml:lang="en">ctEnv</rdfs:label>
+        <obo:IAO_0000115>Direct envirionmental compartment start context. Allows IATAs to be triggered for a certain selected environmental compartment without a use description.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ctEnv"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#00bf0de4-faaa-ce42-875d-0ece9c47cd17">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#aec6ed1d-895e-2d48-afcd-b58bc2ec408a"/>
+        <rdfs:label xml:lang="en">ctCS</rdfs:label>
+        <obo:IAO_0000115>The context is determined by a 'contributing scenario' as part of an 'exposure scenario'. Depending on the perspective of the contributing scenario certain 'exposure IATA's are triggered'. The outcome of these exposure IATAs trigger the relevant human health or environmental IATA's (Note only a few exposure IATAs have been implemented)</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ctCS"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#ec47a247-69a0-4e4e-890d-2168442e3592">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#aec6ed1d-895e-2d48-afcd-b58bc2ec408a"/>
+        <rdfs:label xml:lang="en">ctSwitch</rdfs:label>
+        <obo:IAO_0000115>Indicates that the current context is not a starting context but caused by a switch action.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ctSwitch"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8dac9c62-ee22-384d-9c53-eacec7b4e9be">
+        <rdfs:label xml:lang="en">ScenarioType</rdfs:label>
+        <obo:IAO_0000115>Indicates if the grouping scenario is related to human health or environemental grouping scenario.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/ScenarioType"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#22220454-4881-c443-abfc-a11e90533c09">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8dac9c62-ee22-384d-9c53-eacec7b4e9be"/>
+        <rdfs:label xml:lang="en">stHuman</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/stHuman"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#b912d0d5-3d84-ee41-806a-0745579ef416">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8dac9c62-ee22-384d-9c53-eacec7b4e9be"/>
+        <rdfs:label xml:lang="en">stEnvironment</rdfs:label>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/stEnvironment"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#3d898eeb-0062-3e4f-8c78-6db4cd9a5f56">
+        <rdfs:label xml:lang="en">Section</rdfs:label>
+        <obo:IAO_0000115>Used to indicate the section a decision node or endpoint qualifier belongs to.</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/Section"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#8856b302-98e5-ca4f-9d2f-e5ed20abdeeb">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#3d898eeb-0062-3e4f-8c78-6db4cd9a5f56"/>
+        <rdfs:label xml:lang="en">sWTA</rdfs:label>
+        <obo:IAO_0000115>What They Are</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/sWTA"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#fe2c5782-eb79-a44a-881e-d774fcabb57b">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#3d898eeb-0062-3e4f-8c78-6db4cd9a5f56"/>
+        <rdfs:label xml:lang="en">sWTL</rdfs:label>
+        <obo:IAO_0000115>Where They Leave</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/sWTL"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#fab0c339-6a8c-5c40-bad4-58026b2e5cee">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#3d898eeb-0062-3e4f-8c78-6db4cd9a5f56"/>
+        <rdfs:label xml:lang="en">sWTG</rdfs:label>
+        <obo:IAO_0000115>Where They Go</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/sWTG"/>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#20bc5319-c794-7647-97f0-792531eee123">
+        <rdfs:subClassOf rdf:resource="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#3d898eeb-0062-3e4f-8c78-6db4cd9a5f56"/>
+        <rdfs:label xml:lang="en">sWTD</rdfs:label>
+        <obo:IAO_0000115>What They Do</obo:IAO_0000115>
+        <owl:sameAs rdf:resource="https://h2020-sbd4nano.github.io/gracious-blueprint/2021/sWTD"/>
+    </owl:Class>
+
+
     <owl:Class rdf:about="https://h2020-sbd4nano.github.io/sbd4nano-gracious-owl/gracious.html#1928606b-9fac-6745-a140-eca04d05dbae">
         <rdfs:label xml:lang="en">PC_IDENTITY</rdfs:label>
         <obo:IAO_0000115>Identifying endpoints</obo:IAO_0000115>

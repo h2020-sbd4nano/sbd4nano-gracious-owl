@@ -19,7 +19,7 @@ println """<?xml version="1.0"?>
 // endpoints
 int counter = 0
 for (kb in termList.knowledgebases) {
-  if (kb.name == "ENDPOINT_KB") {
+  if (kb.name == "ENDPOINT_KB" || kb.name == "IATA_KB") {
     for (category in kb.enumerations) {
       cathName = category.name
       if (category.id != null) {

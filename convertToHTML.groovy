@@ -22,7 +22,7 @@ grant agreement No. <a href="https://cordis.europa.eu/project/id/862195">862195<
 // endpoints
 int counter = 0
 for (kb in termList.knowledgebases) {
-  if (kb.name == "ENDPOINT_KB") {
+  if (kb.name == "ENDPOINT_KB" || kb.name == "IATA_KB") {
     for (category in kb.enumerations) {
       counter++;
       cathName = category.name
